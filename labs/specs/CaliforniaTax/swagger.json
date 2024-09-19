@@ -1,0 +1,234 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Tax Rate API",
+    "version": "1"
+  },
+  "paths": {
+    "/api/taxrate/GetRateByAddress": {
+      "get": {
+        "tags": [
+          "TaxRate"
+        ],
+        "summary": "Get tax rate(s) by address...",
+        "parameters": [
+          {
+            "name": "Address",
+            "in": "query",
+            "description": "The address of the location",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "City",
+            "in": "query",
+            "description": "The city of the location",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Zip",
+            "in": "query",
+            "description": "The zip code of the location",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "IncludeUpHierarchy",
+            "in": "query",
+            "description": "Inlcude UpHierarchy?",
+            "schema": {
+              "type": "boolean"
+            }
+          },
+          {
+            "name": "Token",
+            "in": "query",
+            "description": "Lat Long Token?",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TaxRateDto"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/TaxRateDto"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "500": {
+            "description": "Server Error"
+          },
+          "default": {
+            "description": "Unexpected Error"
+          }
+        }
+      }
+    },
+    "/api/taxrate/GetRateByLngLat": {
+      "get": {
+        "tags": [
+          "TaxRate"
+        ],
+        "summary": "Get tax rate(s) by longitude and latitude",
+        "parameters": [
+          {
+            "name": "Longitude",
+            "in": "query",
+            "description": "The longitude of a location",
+            "required": true,
+            "schema": {
+              "type": "number",
+              "format": "double"
+            }
+          },
+          {
+            "name": "Latitude",
+            "in": "query",
+            "description": "The latitude of a location",
+            "required": true,
+            "schema": {
+              "type": "number",
+              "format": "double"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TaxRateDto"
+                }
+              },
+              "application/xml": {
+                "schema": {
+                  "$ref": "#/components/schemas/TaxRateDto"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "500": {
+            "description": "Server Error"
+          },
+          "default": {
+            "description": "Unexpected Error"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "TaxRateInfoDto": {
+        "type": "object",
+        "properties": {
+          "rate": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "jurisdiction": {
+            "type": "string"
+          },
+          "city": {
+            "type": "string"
+          },
+          "county": {
+            "type": "string"
+          },
+          "tac": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "GeocodeInfoDto": {
+        "type": "object",
+        "properties": {
+          "matchCodes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "formattedAddress": {
+            "type": "string"
+          },
+          "confidence": {
+            "type": "string"
+          },
+          "calcMethod": {
+            "type": "string"
+          },
+          "bufferDistance": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "latitude": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "longitude": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TaxRateDto": {
+        "type": "object",
+        "properties": {
+          "taxRateInfo": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TaxRateInfoDto"
+            },
+            "description": "The tax rate(s) at a given location"
+          },
+          "geocodeInfo": {
+            "$ref": "#/components/schemas/GeocodeInfoDto"
+          },
+          "termsOfUse": {
+            "type": "string"
+          },
+          "disclaimer": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "TaxRate",
+      "description": "Tax Rate"
+    }
+  ]
+}
