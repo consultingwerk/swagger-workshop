@@ -89,12 +89,11 @@ class Demo.Swagger.CaliforniaTax.Client.TaxInfoClient:
 
         oRequest = RequestBuilder:Get(oUrl):Request.
 
-        oHttpClient = ClientBuilder:Build():Client.
         oLibrary = ClientLibraryBuilder:Build()
                             :SslVerifyHost(false)
                             :Library.
 
-        oClient = ClientBuilder:Build():UsingLibrary(oLibrary):Client .
+        oHttpClient = ClientBuilder:Build():UsingLibrary(oLibrary):Client .
 
         oResponse = oHttpClient:Execute(oRequest).
 
