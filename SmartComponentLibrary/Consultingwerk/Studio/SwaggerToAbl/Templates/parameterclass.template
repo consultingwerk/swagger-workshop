@@ -1,0 +1,164 @@
+<% DEFINE VARIABLE i              AS INTEGER          NO-UNDO. %>
+<% DEFINE VARIABLE iCount         AS INTEGER          NO-UNDO. %>
+<% DEFINE VARIABLE cProperties    AS CHARACTER EXTENT NO-UNDO. %>
+<% DEFINE VARIABLE oProperties    AS JsonObject       NO-UNDO. %>
+<% DEFINE VARIABLE oProperty      AS JsonObject       NO-UNDO. %>
+<% DEFINE VARIABLE lcDescription  AS LONGCHAR         NO-UNDO. %>
+<% DEFINE VARIABLE lcDescription2 AS LONGCHAR EXTENT  NO-UNDO. %>
+<% FIX-CODEPAGE(lcDescription) = "UTF-8":U. %>
+<% oProperties = SwaggerToAblHelper:GetProperties (poSchema, poApiSpec) . %>
+<% cProperties = oProperties:GetNames() . %>
+<% iCount = EXTENT (cProperties) . %>
+<% EXTENT (lcDescription2) = iCount . %>
+/*------------------------------------------------------------------------
+    File        : <%= poClassName:ClassName SKIP(0) %>
+    Purpose     :
+    Syntax      :
+    Description :
+    Author(s)   :
+    Created     : <%= STRING(NOW, "99.99.9999 HH:MM:SS") SKIP(0) %>
+    Notes       :
+  ----------------------------------------------------------------------*/<%= SKIP(1) %>
+<%= '' SKIP %>
+BLOCK-LEVEL ON ERROR UNDO, THROW.
+<%= '' SKIP %>
+{Consultingwerk/products.i}<%= SKIP(1) %>
+<%= '' SKIP %>
+USING Consultingwerk.*                          FROM PROPATH .
+USING Consultingwerk.Framework.Collections.*    FROM PROPATH .
+USING <%= poClassName:PackageName %>.*<%= FILL (' ', MAX (1, 40 - LENGTH (poClassName:PackageName, "CHARACTER"))) %>FROM PROPATH .
+USING Progress.Lang.*                           FROM PROPATH .
+<%= '' SKIP %>
+CLASS <%= poClassName:PackageName %>.<%= poClassName:ClassName SKIP (0) %>
+    INHERITS ParameterObject
+    IMPLEMENTS IValueObjectValidatorWithMessages
+    SERIALIZABLE:
+<%= '' SKIP %>
+<% DO i = 1 TO iCount: %>
+<%    ASSIGN oProperty = oProperties:GetJsonObject(cProperties[i]) . %>
+<%    IF oProperty:Has ("description":u) THEN DO: %>
+<%       ASSIGN lcDescription  = oProperty:GetLongchar ("description":u) no-error.  %>
+<%       IF ERROR-STATUS:ERROR THEN %>
+<%          ASSIGN lcDescription  = oProperty:GetJsonText ("description":u) . %>
+
+<%       ASSIGN lcDescription2[i] = substring(StringHelper:Indent(replace(replace(replace (CodepageHelper:ConvertToCodePage (lcDescription,
+                                                                                                                             SESSION:CPINTERNAL),
+                                          "\n":u, "~n":u),
+                                          "/*":u, "/ *":u),
+                                          "*/":u, "* /":u),
+                                          16),
+                                          17, -1, "character") . %>
+    /**
+     * Purpose: <%= right-trim(STRING(lcDescription2[i])) SKIP(0) %>
+     */
+<%    END. %>
+    DEFINE PUBLIC PROPERTY <%= cProperties[i] %> AS <%= AblDataType (cProperties[i], oProperties) %> NO-UNDO
+    GET.
+    SET.
+<%= '' SKIP %>
+<% END. %>
+<%= '' SKIP %>
+    /*------------------------------------------------------------------------------
+        Purpose: Constructor for the <%= poClassName:ClassName %> class
+        Notes:
+    ------------------------------------------------------------------------------*/
+    CONSTRUCTOR PUBLIC <%= poClassName:ClassName %> ():
+        SUPER ().
+<%= '' SKIP %>
+        THIS-OBJECT:UseSerializedTypeInformation = FALSE.
+<%= '' SKIP %>
+    END CONSTRUCTOR.
+<%= '' SKIP %>
+
+    /*------------------------------------------------------------------------------
+        Purpose: Constructor for the <%= poClassName:ClassName %> class
+        Notes:
+<% DO i = 1 TO iCount: %>
+        @param p<%= StringHelper:CapitalizeFirstLetter(cProperties[i]) %> <%= IF lcDescription2[i] > "" THEN RIGHT-TRIM (ENTRY(1, STRING(lcDescription2[i]), "~n")) ELSE SUBSTITUTE ("The value for the &1 property", cProperties[i]) SKIP(0) %>
+<% END. %>
+    ------------------------------------------------------------------------------*/
+    CONSTRUCTOR PUBLIC <%= poClassName:ClassName %> (
+<% DO i = 1 TO iCount: %>
+        p<%= StringHelper:CapitalizeFirstLetter(cProperties[i]) %> AS <%= AblDataType (cProperties[i], oProperties) %><%= IF i < iCount THEN ",":u ELSE "):":u SKIP(0) %>
+<% END. %>
+<%= '' SKIP(1) %>
+        THIS-OBJECT ().
+<%= '' SKIP %>
+        ASSIGN
+<% DO i = 1 TO iCount: %>
+            THIS-OBJECT:<%= cProperties[i] %> = p<%= StringHelper:CapitalizeFirstLetter(cProperties[i]) %><%= '' SKIP %>
+<% END. %>
+            .
+<%= '' SKIP %>
+    END CONSTRUCTOR.
+<%= '' SKIP %>
+    /**
+     * Purpose: Validates the properties of the given value object
+     * Notes:
+     * @param poValueObject The value object to validate
+     * @return CharacterDictionary of validation messages, when the dictionary is unknown or empty, validation was successful
+     */
+    METHOD PUBLIC CharacterDictionary IsValid (poValueObject AS Progress.Lang.Object):
+<%= '' SKIP %>
+        DEFINE VARIABLE oMessages AS CharacterDictionary NO-UNDO.
+        DEFINE VARIABLE oObject   AS <%= poClassName:ClassName %> NO-UNDO.
+<%= '' SKIP %>
+        ASSIGN oObject = CAST (poValueObject, <%= poClassName:ClassName %>).
+<%= '' SKIP %>
+<%  DO i = 1 TO iCount:
+        ASSIGN oProperty = oProperties:GetJsonObject(cProperties[i]) .
+
+        IF oProperty:Has ("type") THEN DO:
+            CASE oProperty:GetCharacter ("type"):
+                WHEN "string" THEN DO:
+                    IF oProperty:Has ("maxLength") THEN DO: %>
+        IF LENGTH (oObject:<%= cProperties[i] %>, "CHARACTER":U) > <%= oProperty:GetInteger ("maxLength") %> THEN
+            oMessages:Add ("<%= cProperties[i] %>":u, "Exceeds <%= oProperty:GetInteger ("maxLength") %> characters."{&tran}) .
+<%                  END.
+                END.
+            END CASE .
+        END.
+    END.
+
+    DEFINE VARIABLE oRequired AS JsonArray NO-UNDO.
+    DEFINE VARIABLE cRequired AS CHARACTER NO-UNDO.
+    DEFINE VARIABLE cDataType AS CHARACTER NO-UNDO.
+
+    IF poSchema:Has ("required") THEN DO:
+        oRequired = poSchema:GetJsonArray ("required") .
+        iCount = oRequired:Length .
+
+        DO i = 1 TO iCount:
+            ASSIGN cRequired = oRequired:GetCharacter(i)
+                   cDataType = AblDataType (cRequired, oProperties) .
+
+            IF NUM-ENTRIES (cDataType, " ":U) > 1 THEN DO: %>
+
+        IF EXTENT(oObject:<%= cRequired %>) = ? THEN
+            oMessages:Add ("<%= cRequired %>":u, "Missing value for <%= cRequired %>."{&tran}) .
+
+        <%  END.
+            ELSE DO:
+            CASE cDataType:
+                WHEN "character":U THEN DO: %>
+        IF oObject:<%= cRequired %> = "":U OR oObject:<%= cRequired %> = ? THEN
+            oMessages:Add ("<%= cRequired %>":u, "Missing value for <%= cRequired %>."{&tran}) .
+<%              END. %>
+<%              WHEN "date":U OR WHEN "datetime":U OR WHEN "datetime-tz":U OR WHEN "decimal":U OR WHEN "integer":U OR WHEN "int64" OR WHEN "logical" THEN DO: %>
+        IF oObject:<%= cRequired %> = ? THEN
+            oMessages:Add ("<%= cRequired %>":u, "Missing value for <%= cRequired %>."{&tran}) .
+<%              END. %>
+<%              OTHERWISE DO: %>
+        IF NOT VALID-OBJECT(oObject:<%= cRequired %>) THEN
+            oMessages:Add ("<%= cRequired %>":u, "Missing value for <%= cRequired %>."{&tran}) .
+<%              END. %>
+<%          END CASE . %>
+<%          END. %>
+<%      END. %>
+<%  END. %>
+<%= '' SKIP %>
+        RETURN oMessages .
+<%= '' SKIP %>
+    END METHOD.
+<%= '' SKIP %>
+END CLASS.

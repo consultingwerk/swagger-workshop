@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<ttServiceLoader xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <ttServiceLoaderRow>
+        <Order>1</Order>
+        <ServiceTypeName>Consultingwerk.Framework.Server.Telemetry.ITelemetryService</ServiceTypeName>
+        <ServiceClassName>Consultingwerk.Framework.Server.Telemetry.TelemetryService</ServiceClassName>
+    </ttServiceLoaderRow>
+
+    <ttServiceLoaderRow>
+        <Order>2</Order>
+        <ServiceTypeName>Consultingwerk.Framework.Server.Telemetry.ITelemetryOutputWriter</ServiceTypeName>
+        <ServiceClassName>Consultingwerk.Framework.Server.Telemetry.NdjsonTelemetryOutputWriter</ServiceClassName>
+    </ttServiceLoaderRow>
+</ttServiceLoader>

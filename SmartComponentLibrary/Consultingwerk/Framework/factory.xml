@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<ttFactoryLoader xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ttFactoryLoaderRow>
+    <FactoryType>Consultingwerk.OERA.IFetchDataRequest</FactoryType>
+    <FactoryAlias/>
+    <InstanceType>Consultingwerk.OERA.FetchDataRequest</InstanceType>
+  </ttFactoryLoaderRow>
+  <ttFactoryLoaderRow>
+    <FactoryType>Consultingwerk.OERA.IBufferDataSource</FactoryType>
+    <FactoryAlias/>
+    <InstanceType>Consultingwerk.OERA.BufferDataSource</InstanceType>
+  </ttFactoryLoaderRow>  
+  <ttFactoryLoaderRow>
+    <FactoryType>Consultingwerk.OERA.ISmartUiAction</FactoryType>
+    <FactoryAlias/>
+    <InstanceType>Consultingwerk.OERA.SmartUiAction</InstanceType>
+  </ttFactoryLoaderRow>
+</ttFactoryLoader>

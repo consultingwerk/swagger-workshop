@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<ttServiceLoader xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <ttServiceLoaderRow>
+        <Order>1</Order>
+        <ServiceTypeName>Consultingwerk.Framework.Server.SimpleProfiler.ISimpleProfilerService</ServiceTypeName>
+        <ServiceClassName>Consultingwerk.Framework.Server.SimpleProfiler.SimpleProfilerService</ServiceClassName>
+    </ttServiceLoaderRow>
+</ttServiceLoader>

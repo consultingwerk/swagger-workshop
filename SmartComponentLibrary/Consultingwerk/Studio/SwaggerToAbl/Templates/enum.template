@@ -1,0 +1,44 @@
+<% DEFINE VARIABLE i           AS INTEGER          NO-UNDO. %>
+<% DEFINE VARIABLE iCount      AS INTEGER          NO-UNDO. %>
+<% DEFINE VARIABLE oMembers    AS JsonArray        NO-UNDO. %>
+<% oMembers = poSchema:GetJsonArray ("enum") . %>
+<% iCount = oMembers:Length. %>
+/*------------------------------------------------------------------------
+    File        : <%= poClassName:ClassName SKIP(0) %>
+    Purpose     :
+    Syntax      :
+    Description :
+    Author(s)   :
+    Created     : <%= STRING(NOW, "99.99.9999 HH:MM:SS") SKIP(0) %>
+    Notes       :
+  ----------------------------------------------------------------------*/<%= SKIP(1) %>
+<%= '' SKIP %>
+<%= '' SKIP %>
+<%= '' SKIP %>
+ENUM <%= poClassName:PackageName %>.<%= poClassName:ClassName %>:
+<%= '' SKIP %>
+    DEFINE ENUM
+
+<% IF poSchema:Has ("type") AND poSchema:GetCharacter ("type") = "integer" THEN DO:
+    DEFINE VARIABLE cNames AS CHARACTER EXTENT NO-UNDO.
+
+    IF poSchema:Has ("x-enumNames") THEN
+        ASSIGN cNames = JsonHelper:JsonArrayToCharacterExtent (poSchema:GetJsonArray ("x-enumNames")) .
+    IF poSchema:Has ("x-enum-varnames") THEN
+        ASSIGN cNames = JsonHelper:JsonArrayToCharacterExtent (poSchema:GetJsonArray ("x-enum-varnames")) .
+    IF poSchema:Has ("x-ms-enum") THEN
+        ASSIGN cNames = JsonHelper:JsonArrayToCharacterExtent (poSchema:GetJsonArray ("x-ms-enum")) . %>
+
+<% DO i = 1 TO iCount: %>
+        <%= cNames[i] %> = <%= oMembers:GetInteger(i) SKIP(0) %>
+<% END. %>
+<% END. %>
+<% ELSE DO: %>
+<% DO i = 1 TO iCount: %>
+        <%= oMembers:GetCharacter(i) SKIP(0) %>
+<% END. %>
+<% END. %>
+
+<%= '' SKIP %>
+        .
+END ENUM.

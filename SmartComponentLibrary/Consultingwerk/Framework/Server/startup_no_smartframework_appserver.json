@@ -1,0 +1,28 @@
+{
+    "basedOn": "",
+    "inheritStaticProperties": false,
+    "staticProperties": {
+        "Consultingwerk.Framework.Server.RestServerSessionActivator:SetDbClient": false    
+    },
+    "applicationSettings": ".restapplicationsettings",
+    "inheritLoadServices": false,
+    "loadServices": [
+        "Consultingwerk/Framework/Server/common_services.xml"
+    ],
+    "loadFactories": [
+        "Consultingwerk/Framework/factory.xml"
+    ],
+    "inheritManagers": false,
+    "managers": {
+        "Ccs.Common.IServiceManager": "Consultingwerk.Framework.CcsServiceManager"
+    },
+    "inheritCustomLogEntries": false,
+    "customLogEntries": [
+    ],
+    "inheritAliases": false,
+    "aliases": null,
+    "sessionExport": null,
+    "environment": {
+        "ensureAbsolutePropath": true
+    }
+}

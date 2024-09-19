@@ -1,0 +1,1254 @@
+﻿[
+	{
+		"TimeZoneCode": "CEST",
+		"TimeZoneDescription": "Central European Summer Time",
+		"TimeZoneOffset": "+02:00",
+		"TimeZoneSummer": "true",
+		"TimeZoneWinter": "false",
+		"id": "a908f41a-04c0-4bc7-a62a-6bcfb76b5add"
+	},
+	{
+		"TimeZoneCode": "CET",
+		"TimeZoneDescription": "Central European Time",
+		"TimeZoneOffset": "+01:00",
+        "TimeZoneSummer": "false",
+        "TimeZoneWinter": "true",		
+		"id": "798bc1bc-1358-4728-b2a0-6e87897bcd5f"
+	},
+    {
+        "TimeZoneCode": "EEST",
+        "TimeZoneDescription": "Eastern European Summer Time",
+        "TimeZoneOffset": "+03:00",
+        "id": "b50b8142-87ec-450d-9899-d4d2fd624c35"
+    },
+    {
+        "TimeZoneCode": "EET",
+        "TimeZoneDescription": "Eastern European Time",
+        "TimeZoneOffset": "+02:00",
+        "id": "d938dbbe-b4dd-4bd4-bb85-c00a67626a9c"
+    },
+    {
+        "TimeZoneCode": "GMT",
+        "TimeZoneDescription": "Greenwich Mean Time",
+        "TimeZoneOffset": "+00:00",
+        "id": "6359721e-4a2d-4e70-ac89-14c958a10589"
+    },
+    {
+        "TimeZoneCode": "EST",
+        "TimeZoneDescription": "Eastern Standard Time (North America)",
+        "TimeZoneOffset": "-05:00",
+        "id": "ab4cc1e3-0f28-41cf-8383-c56e0154fae8"
+    },
+    {
+        "TimeZoneCode": "ACDT",
+        "TimeZoneDescription": "Australian Central Daylight Saving Time",
+        "TimeZoneOffset": "+10:30",
+        "id": "1a3f23ad-b654-4567-b4d8-844ee0fb540a"
+    },
+    {
+        "TimeZoneCode": "ACST",
+        "TimeZoneDescription": "Australian Central Standard Time",
+        "TimeZoneOffset": "+09:30",
+        "id": "7e29f584-08e8-47ee-8da6-1d3e611ba910"
+    },
+    {
+        "TimeZoneCode": "ACT",
+        "TimeZoneDescription": "Acre Time",
+        "TimeZoneOffset": "-05:00",
+        "id": "98e19df5-a28f-4752-87f0-8e6380b49533"
+    },
+    {
+        "TimeZoneCode": "UTC+06:30",
+        "TimeZoneDescription": "ASEAN Common Time (unofficial)",
+        "TimeZoneOffset": "+06:30",
+        "id": "623555fe-af5c-4b5e-a36e-f4694bb7b83f"
+    },
+    {
+        "TimeZoneCode": "ACWST",
+        "TimeZoneDescription": "Australian Central Western Standard Time (unofficial)",
+        "TimeZoneOffset": "+08:45",
+        "id": "f195c5b0-7427-4f46-a5de-5a7dfc141075"
+    },
+    {
+        "TimeZoneCode": "ADT",
+        "TimeZoneDescription": "Atlantic Daylight Time",
+        "TimeZoneOffset": "-03:00",
+        "id": "1495327d-73d4-47cf-9fa8-18d208ed0636"
+    },
+    {
+        "TimeZoneCode": "AEDT",
+        "TimeZoneDescription": "Australian Eastern Daylight Saving Time",
+        "TimeZoneOffset": "+11:00",
+        "id": "1375faa8-bf71-4902-9dd2-134678cf6ab5"
+    },
+    {
+        "TimeZoneCode": "AEST",
+        "TimeZoneDescription": "Australian Eastern Standard Time",
+        "TimeZoneOffset": "+10:00",
+        "id": "0d3366e5-51e6-49de-824c-3ae83e4cfc53"
+    },
+    {
+        "TimeZoneCode": "AET",
+        "TimeZoneDescription": "Australian Eastern Time",
+        "TimeZoneOffset": "+10:00",
+        "id": "1b9f79ac-645a-4e9e-984e-ec322c1c3958"
+    },
+    {
+        "TimeZoneCode": "AFT",
+        "TimeZoneDescription": "Afghanistan Time",
+        "TimeZoneOffset": "+04:30",
+        "id": "f55fd16b-904a-4844-849c-2aada5f29e9c"
+    },
+    {
+        "TimeZoneCode": "AKDT",
+        "TimeZoneDescription": "Alaska Daylight Time",
+        "TimeZoneOffset": "-08:00",
+        "id": "f1d0d2b2-7a55-4ac9-82e0-fc0632d9d438"
+    },
+    {
+        "TimeZoneCode": "AKST",
+        "TimeZoneDescription": "Alaska Standard Time",
+        "TimeZoneOffset": "-09:00",
+        "id": "9cbd1600-18ff-4e38-a787-256ca6ba14f6"
+    },
+    {
+        "TimeZoneCode": "ALMT",
+        "TimeZoneDescription": "Alma-Ata Time[1]",
+        "TimeZoneOffset": "+06:00",
+        "id": "618ba2b0-03e3-45b7-844c-ca690c1654f8"
+    },
+    {
+        "TimeZoneCode": "AMST",
+        "TimeZoneDescription": "Amazon Summer Time (Brazil)[2]",
+        "TimeZoneOffset": "-03:00",
+        "id": "aaa29bd7-89fe-4241-a39e-0e5c9d24a736"
+    },
+    {
+        "TimeZoneCode": "AMT",
+        "TimeZoneDescription": "Amazon Time (Brazil)[3]",
+        "TimeZoneOffset": "-04:00",
+        "id": "35fcc1f4-5f96-4dfd-8b49-b576f88d8a6a"
+    },
+    {
+        "TimeZoneCode": "AMT+4",
+        "TimeZoneDescription": "Armenia Time",
+        "TimeZoneOffset": "+04:00",
+        "id": "300f182b-5935-4041-8c1a-ad9a6e4801ec"
+    },
+    {
+        "TimeZoneCode": "ANAT",
+        "TimeZoneDescription": "Anadyr Time[4]",
+        "TimeZoneOffset": "+12:00",
+        "id": "44581855-f22a-4504-bd33-db8f98ab826f"
+    },
+    {
+        "TimeZoneCode": "AQTT",
+        "TimeZoneDescription": "Aqtobe Time[5]",
+        "TimeZoneOffset": "+05:00",
+        "id": "1960e9f6-816b-4aa3-9e55-d03a9a368c0d"
+    },
+    {
+        "TimeZoneCode": "ART",
+        "TimeZoneDescription": "Argentina Time",
+        "TimeZoneOffset": "-03:00",
+        "id": "cd8701c0-b3ae-478b-821a-ff1197e71e05"
+    },
+    {
+        "TimeZoneCode": "AST",
+        "TimeZoneDescription": "Arabia Standard Time",
+        "TimeZoneOffset": "+03:00",
+        "id": "3f835def-247a-4a54-a997-1c9d0b15e9c8"
+    },
+    {
+        "TimeZoneCode": "AST-4",
+        "TimeZoneDescription": "Atlantic Standard Time",
+        "TimeZoneOffset": "-04:00",
+        "id": "d44add12-7bd0-4ad0-97f0-c035f5345448"
+    },
+    {
+        "TimeZoneCode": "AWST",
+        "TimeZoneDescription": "Australian Western Standard Time",
+        "TimeZoneOffset": "+08:00",
+        "id": "c5c80328-4229-4029-a65b-90941d99ac12"
+    },
+    {
+        "TimeZoneCode": "AZOST",
+        "TimeZoneDescription": "Azores Summer Time",
+        "TimeZoneOffset": "+00:00",
+        "id": "ef7b719a-c93b-4d60-ae83-64188654ed59"
+    },
+    {
+        "TimeZoneCode": "AZOT",
+        "TimeZoneDescription": "Azores Standard Time",
+        "TimeZoneOffset": "-01:00",
+        "id": "404c0500-fa04-4fc2-8819-bbb8eabe9b65"
+    },
+    {
+        "TimeZoneCode": "AZT",
+        "TimeZoneDescription": "Azerbaijan Time",
+        "TimeZoneOffset": "+04:00",
+        "id": "ab8add72-8c7b-48ac-b766-de2b3ef4009f"
+    },
+    {
+        "TimeZoneCode": "BNT",
+        "TimeZoneDescription": "Brunei Time",
+        "TimeZoneOffset": "+08:00",
+        "id": "734d1c15-60e6-4d65-9599-9507a5fff25b"
+    },
+    {
+        "TimeZoneCode": "BIOT",
+        "TimeZoneDescription": "British Indian Ocean Time",
+        "TimeZoneOffset": "+06:00",
+        "id": "4f8d01ec-5fc5-4b7d-bea8-2ffd0207ef82"
+    },
+    {
+        "TimeZoneCode": "BIT",
+        "TimeZoneDescription": "Baker Island Time",
+        "TimeZoneOffset": "-12:00",
+        "id": "d02c7a76-02cf-4b00-a619-e0f7aac2155f"
+    },
+    {
+        "TimeZoneCode": "BOT",
+        "TimeZoneDescription": "Bolivia Time",
+        "TimeZoneOffset": "-04:00",
+        "id": "252a7da0-0375-4db6-bf2a-5451fa940414"
+    },
+    {
+        "TimeZoneCode": "BRST",
+        "TimeZoneDescription": "BrasÃ­lia Summer Time",
+        "TimeZoneOffset": "-02:00",
+        "id": "d4355154-ff36-49cb-9df0-5999c7fef8e0"
+    },
+    {
+        "TimeZoneCode": "BRT",
+        "TimeZoneDescription": "BrasÃ­lia Time",
+        "TimeZoneOffset": "-03:00",
+        "id": "7db75c6f-83a0-4f93-b29f-b7ccdc3b151a"
+    },
+    {
+        "TimeZoneCode": "BST+6",
+        "TimeZoneDescription": "Bangladesh Standard Time",
+        "TimeZoneOffset": "+06:00",
+        "id": "3df41d6a-1ce4-40e6-bfb8-2a6fa0fb2f65"
+    },
+    {
+        "TimeZoneCode": "BST+11",
+        "TimeZoneDescription": "Bougainville Standard Time[6]",
+        "TimeZoneOffset": "+11:00",
+        "id": "6a0d7989-9c0a-4769-a3e9-b45b54008c3d"
+    },
+    {
+        "TimeZoneCode": "BST",
+        "TimeZoneDescription": "British Summer Time (British Standard Time from Feb 1968 to Oct 1971)",
+        "TimeZoneOffset": "+01:00",
+        "id": "3b4d25dc-5658-4028-9132-81be712b8aa0"
+    },
+    {
+        "TimeZoneCode": "BTT",
+        "TimeZoneDescription": "Bhutan Time",
+        "TimeZoneOffset": "+06:00",
+        "id": "c3f7883a-34ac-4e6c-9c74-8f377b3c2ca0"
+    },
+    {
+        "TimeZoneCode": "CAT",
+        "TimeZoneDescription": "Central Africa Time",
+        "TimeZoneOffset": "+02:00",
+        "id": "9ea9765f-5b9a-4347-b475-346ce0fcbf3a"
+    },
+    {
+        "TimeZoneCode": "CCT",
+        "TimeZoneDescription": "Cocos Islands Time",
+        "TimeZoneOffset": "+06:30",
+        "id": "6599922c-b711-41ab-aaec-873ea448186f"
+    },
+    {
+        "TimeZoneCode": "CDT-5",
+        "TimeZoneDescription": "Central Daylight Time (North America)",
+        "TimeZoneOffset": "-05:00",
+        "id": "b7699c11-ad6b-426c-b6fa-b3a40dafdae9"
+    },
+    {
+        "TimeZoneCode": "CDT",
+        "TimeZoneDescription": "Cuba Daylight Time[7]",
+        "TimeZoneOffset": "-04:00",
+        "id": "c20c76b0-7593-4557-8701-9583437e61e6"
+    },
+    {
+        "TimeZoneCode": "CHADT",
+        "TimeZoneDescription": "Chatham Daylight Time",
+        "TimeZoneOffset": "+13:45",
+        "id": "da18000b-9768-4416-ad55-50984243a72d"
+    },
+    {
+        "TimeZoneCode": "CHAST",
+        "TimeZoneDescription": "Chatham Standard Time",
+        "TimeZoneOffset": "+12:45",
+        "id": "714656f9-7c3b-4e08-8a96-04207e133f17"
+    },
+    {
+        "TimeZoneCode": "CHOT",
+        "TimeZoneDescription": "Choibalsan Standard Time",
+        "TimeZoneOffset": "+08:00",
+        "id": "2cf79adc-5e40-44bf-be1b-d4f99434ce3a"
+    },
+    {
+        "TimeZoneCode": "CHOST",
+        "TimeZoneDescription": "Choibalsan Summer Time",
+        "TimeZoneOffset": "+09:00",
+        "id": "1a65501c-716c-4af9-95d6-e6ec59116e35"
+    },
+    {
+        "TimeZoneCode": "CHST",
+        "TimeZoneDescription": "Chamorro Standard Time",
+        "TimeZoneOffset": "+10:00",
+        "id": "02bfb5e8-6614-4c3f-ab40-e0f00c169125"
+    },
+    {
+        "TimeZoneCode": "CHUT",
+        "TimeZoneDescription": "Chuuk Time",
+        "TimeZoneOffset": "+10:00",
+        "id": "2d42d4fb-ca2e-425d-9ceb-f70c87c41229"
+    },
+    {
+        "TimeZoneCode": "CIST",
+        "TimeZoneDescription": "Clipperton Island Standard Time",
+        "TimeZoneOffset": "-08:00",
+        "id": "bd9b1823-3fd8-4c74-846d-24ddb9c7bf38"
+    },
+    {
+        "TimeZoneCode": "CKT",
+        "TimeZoneDescription": "Cook Island Time",
+        "TimeZoneOffset": "-10:00",
+        "id": "cf8e3d50-ebe5-4eb8-9b1b-7730c1193905"
+    },
+    {
+        "TimeZoneCode": "CLST",
+        "TimeZoneDescription": "Chile Summer Time",
+        "TimeZoneOffset": "-03:00",
+        "id": "99cdaa3c-ed77-442a-8102-599e45dc9176"
+    },
+    {
+        "TimeZoneCode": "CLT",
+        "TimeZoneDescription": "Chile Standard Time",
+        "TimeZoneOffset": "-04:00",
+        "id": "b8df5fa0-4548-43eb-9a73-5c6127356087"
+    },
+    {
+        "TimeZoneCode": "COST",
+        "TimeZoneDescription": "Colombia Summer Time",
+        "TimeZoneOffset": "-04:00",
+        "id": "6b65a2ef-eaaf-4802-a3a8-8837bc3cf3f0"
+    },
+    {
+        "TimeZoneCode": "COT",
+        "TimeZoneDescription": "Colombia Time",
+        "TimeZoneOffset": "-05:00",
+        "id": "cfe9bfbd-8687-4c38-aaf5-9906bab26318"
+    },
+    {
+        "TimeZoneCode": "CST-6",
+        "TimeZoneDescription": "Central Standard Time (North America)",
+        "TimeZoneOffset": "-06:00",
+        "id": "af128193-c71f-4912-b990-9fd43207c7d3"
+    },
+    {
+        "TimeZoneCode": "CST",
+        "TimeZoneDescription": "China Standard Time",
+        "TimeZoneOffset": "+08:00",
+        "id": "574907ed-017a-4dfe-9c6d-0d432e88db3d"
+    },
+    {
+        "TimeZoneCode": "CST-5",
+        "TimeZoneDescription": "Cuba Standard Time",
+        "TimeZoneOffset": "-05:00",
+        "id": "3dfef61a-6b5c-4328-a854-c1476ac178ea"
+    },
+    {
+        "TimeZoneCode": "CT",
+        "TimeZoneDescription": "Central Time",
+        "TimeZoneOffset": "-06:00",
+        "id": "2a42e62f-620c-4623-b46b-d21466bac1d2"
+    },
+    {
+        "TimeZoneCode": "CVT",
+        "TimeZoneDescription": "Cape Verde Time",
+        "TimeZoneOffset": "-01:00",
+        "id": "04ddb2cb-1ae9-41c3-9fdf-606b87c2ee56"
+    },
+    {
+        "TimeZoneCode": "CWST",
+        "TimeZoneDescription": "Central Western Standard Time (Australia) unofficial",
+        "TimeZoneOffset": "+08:45",
+        "id": "77f98044-0317-48b9-a0e4-d8bcb68da906"
+    },
+    {
+        "TimeZoneCode": "CXT",
+        "TimeZoneDescription": "Christmas Island Time",
+        "TimeZoneOffset": "+07:00",
+        "id": "f3395533-1233-4276-8bd7-3afdb4490258"
+    },
+    {
+        "TimeZoneCode": "DAVT",
+        "TimeZoneDescription": "Davis Time",
+        "TimeZoneOffset": "+07:00",
+        "id": "97efd016-99c7-44cb-a380-e79caa7f2ebd"
+    },
+    {
+        "TimeZoneCode": "DDUT",
+        "TimeZoneDescription": "Dumont d'Urville Time",
+        "TimeZoneOffset": "+10:00",
+        "id": "aabc6733-c28b-4a78-9b8e-be944ea48f08"
+    },
+    {
+        "TimeZoneCode": "DFT",
+        "TimeZoneDescription": "AIX-specific equivalent of Central European Time[NB 1]",
+        "TimeZoneOffset": "+01:00",
+        "id": "f6d5bf0a-d247-4dae-9c15-442e174ba76b"
+    },
+    {
+        "TimeZoneCode": "EASST",
+        "TimeZoneDescription": "Easter Island Summer Time",
+        "TimeZoneOffset": "-05:00",
+        "id": "402e3a5e-cf37-4ee6-ac74-c07d2fa5f765"
+    },
+    {
+        "TimeZoneCode": "EAST",
+        "TimeZoneDescription": "Easter Island Standard Time",
+        "TimeZoneOffset": "-06:00",
+        "id": "cc20ff4b-7a21-411b-87fb-9b9470cf62f3"
+    },
+    {
+        "TimeZoneCode": "EAT",
+        "TimeZoneDescription": "East Africa Time",
+        "TimeZoneOffset": "+03:00",
+        "id": "05ce5771-d6f7-4933-8b5d-0515e71e1c1c"
+    },
+    {
+        "TimeZoneCode": "ECT",
+        "TimeZoneDescription": "Eastern Caribbean Time (does not recognise DST)",
+        "TimeZoneOffset": "-04:00",
+        "id": "e3ddde98-6b2b-4137-8280-2c8d65f9b6b5"
+    },
+    {
+        "TimeZoneCode": "ECT_ECU",
+        "TimeZoneDescription": "Ecuador Time",
+        "TimeZoneOffset": "-05:00",
+        "id": "6517552a-732f-4c7b-a8a0-a7ef8bc40936"
+    },
+    {
+        "TimeZoneCode": "EDT",
+        "TimeZoneDescription": "Eastern Daylight Time (North America)",
+        "TimeZoneOffset": "-04:00",
+        "id": "d340538b-f785-403a-96e9-02038f8e99bc"
+    },
+    {
+        "TimeZoneCode": "EGST",
+        "TimeZoneDescription": "Eastern Greenland Summer Time",
+        "TimeZoneOffset": "+00:00",
+        "id": "bd21b632-9e1f-467c-ae06-87ea92697373"
+    },
+    {
+        "TimeZoneCode": "EGT",
+        "TimeZoneDescription": "Eastern Greenland Time",
+        "TimeZoneOffset": "-01:00",
+        "id": "2f307d5c-69bc-43ff-accd-2e8d37400a8e"
+    },
+    {
+        "TimeZoneCode": "ET",
+        "TimeZoneDescription": "Eastern Time (North America)",
+        "TimeZoneOffset": "-05:00",
+        "id": "ef3533d1-f13a-4de6-9fbc-051fd827c248"
+    },
+    {
+        "TimeZoneCode": "FET",
+        "TimeZoneDescription": "Further-eastern European Time",
+        "TimeZoneOffset": "+03:00",
+        "id": "04e55999-ebc2-4aca-8e94-805cae51b022"
+    },
+    {
+        "TimeZoneCode": "FJT",
+        "TimeZoneDescription": "Fiji Time",
+        "TimeZoneOffset": "+12:00",
+        "id": "988ee73d-f227-42b7-8a08-0af9756099e9"
+    },
+    {
+        "TimeZoneCode": "FKST",
+        "TimeZoneDescription": "Falkland Islands Summer Time",
+        "TimeZoneOffset": "-03:00",
+        "id": "d511979a-99a7-4091-9ed7-ecb81bf81a45"
+    },
+    {
+        "TimeZoneCode": "FKT",
+        "TimeZoneDescription": "Falkland Islands Time",
+        "TimeZoneOffset": "-04:00",
+        "id": "d869093f-e835-44ad-86f5-d612aaf282b0"
+    },
+    {
+        "TimeZoneCode": "FNT",
+        "TimeZoneDescription": "Fernando de Noronha Time",
+        "TimeZoneOffset": "-02:00",
+        "id": "6e43da52-9301-45e8-96cb-615bf21a5f1e"
+    },
+    {
+        "TimeZoneCode": "GALT",
+        "TimeZoneDescription": "GalÃ¡pagos Time",
+        "TimeZoneOffset": "-06:00",
+        "id": "2d25ef35-f8ab-4294-bcb6-9dca4ebccca1"
+    },
+    {
+        "TimeZoneCode": "GAMT",
+        "TimeZoneDescription": "Gambier Islands Time",
+        "TimeZoneOffset": "-09:00",
+        "id": "c4d69bef-c02e-4fda-9d9d-787a5919501f"
+    },
+    {
+        "TimeZoneCode": "GET_GEO",
+        "TimeZoneDescription": "Georgia Standard Time",
+        "TimeZoneOffset": "+04:00",
+        "id": "614a6b96-b852-4aa5-8eb8-f6da63050728"
+    },
+    {
+        "TimeZoneCode": "GFT",
+        "TimeZoneDescription": "French Guiana Time",
+        "TimeZoneOffset": "-03:00",
+        "id": "67ef5521-bc77-4f55-908c-b41e3ef59aeb"
+    },
+    {
+        "TimeZoneCode": "GILT",
+        "TimeZoneDescription": "Gilbert Island Time",
+        "TimeZoneOffset": "+12:00",
+        "id": "5a9f420a-5d9a-4c10-97c5-0d7b4eab14e5"
+    },
+    {
+        "TimeZoneCode": "GIT",
+        "TimeZoneDescription": "Gambier Island Time",
+        "TimeZoneOffset": "-09:00",
+        "id": "040ef77e-c475-4fb5-918b-3c09dd17b535"
+    },
+    {
+        "TimeZoneCode": "GST-2",
+        "TimeZoneDescription": "South Georgia and the South Sandwich Islands Time",
+        "TimeZoneOffset": "-02:00",
+        "id": "6585d0b6-7108-40ce-90b4-08e0ff3e4cb8"
+    },
+    {
+        "TimeZoneCode": "GST",
+        "TimeZoneDescription": "Gulf Standard Time",
+        "TimeZoneOffset": "+04:00",
+        "id": "9231e678-24a5-4b80-951d-bda61bd47b0a"
+    },
+    {
+        "TimeZoneCode": "GYT",
+        "TimeZoneDescription": "Guyana Time",
+        "TimeZoneOffset": "-04:00",
+        "id": "b4ab59b5-4195-4ca0-a5ec-c42c989cff25"
+    },
+    {
+        "TimeZoneCode": "HDT",
+        "TimeZoneDescription": "Hawaii-Aleutian Daylight Time",
+        "TimeZoneOffset": "-09:00",
+        "id": "fd217ab5-debf-4127-8710-108852163d93"
+    },
+    {
+        "TimeZoneCode": "HAEC",
+        "TimeZoneDescription": "Heure Avancee d'Europe Centrale French-language name for CEST",
+        "TimeZoneOffset": "+02:00",
+        "id": "1eaf0734-89e2-4828-acd6-7fdf50c6f105"
+    },
+    {
+        "TimeZoneCode": "HST",
+        "TimeZoneDescription": "Hawaii-Aleutian Standard Time",
+        "TimeZoneOffset": "-10:00",
+        "id": "3edd8ec2-f5d0-4912-bad3-234a3ff58ce2"
+    },
+    {
+        "TimeZoneCode": "HKT",
+        "TimeZoneDescription": "Hong Kong Time",
+        "TimeZoneOffset": "+08:00",
+        "id": "213ef8d0-eb8e-4dc3-bb59-2c76aa87f617"
+    },
+    {
+        "TimeZoneCode": "HMT",
+        "TimeZoneDescription": "Heard and McDonald Islands Time",
+        "TimeZoneOffset": "+05:00",
+        "id": "e8c14ec7-68cf-485f-a4f7-19cd54f85812"
+    },
+    {
+        "TimeZoneCode": "HOVST",
+        "TimeZoneDescription": "Hovd Summer Time (not used from 2017-present)",
+        "TimeZoneOffset": "+08:00",
+        "id": "ee751341-86ad-4984-9db8-2b6fe6f99f19"
+    },
+    {
+        "TimeZoneCode": "HOVT",
+        "TimeZoneDescription": "Hovd Time",
+        "TimeZoneOffset": "+07:00",
+        "id": "7b263c37-4360-43af-b054-dd471b530a6f"
+    },
+    {
+        "TimeZoneCode": "ICT",
+        "TimeZoneDescription": "Indochina Time",
+        "TimeZoneOffset": "+07:00",
+        "id": "3d7245e3-a5ca-4ac8-b0ae-3564f67299b0"
+    },
+    {
+        "TimeZoneCode": "IDLW",
+        "TimeZoneDescription": "International Day Line West time zone",
+        "TimeZoneOffset": "-12:00",
+        "id": "d9e6e226-1a2a-4e48-aba0-acc43c8d8803"
+    },
+    {
+        "TimeZoneCode": "IDT",
+        "TimeZoneDescription": "Israel Daylight Time",
+        "TimeZoneOffset": "+03:00",
+        "id": "d5340f43-4b0f-4fec-bfad-bbae371d48bd"
+    },
+    {
+        "TimeZoneCode": "IOT",
+        "TimeZoneDescription": "Indian Ocean Time",
+        "TimeZoneOffset": "+03:00",
+        "id": "268f0027-5881-461f-a519-b622786c0113"
+    },
+    {
+        "TimeZoneCode": "IRDT",
+        "TimeZoneDescription": "Iran Daylight Time",
+        "TimeZoneOffset": "+04:30",
+        "id": "97032dbf-51bd-434d-8a0f-401ed2b4cfa2"
+    },
+    {
+        "TimeZoneCode": "IRKT",
+        "TimeZoneDescription": "Irkutsk Time",
+        "TimeZoneOffset": "+08:00",
+        "id": "8b55fca5-8508-4b9d-a4d7-f8a70992cd5d"
+    },
+    {
+        "TimeZoneCode": "IRST",
+        "TimeZoneDescription": "Iran Standard Time",
+        "TimeZoneOffset": "+03:30",
+        "id": "f3ef99f1-e859-4514-bf97-a928582c52fe"
+    },
+    {
+        "TimeZoneCode": "IST",
+        "TimeZoneDescription": "Indian Standard Time",
+        "TimeZoneOffset": "+05:30",
+        "id": "d45da61e-f70a-4272-a6a6-dfd076fb9762"
+    },
+    {
+        "TimeZoneCode": "IST+1",
+        "TimeZoneDescription": "Irish Standard Time[8]",
+        "TimeZoneOffset": "+01:00",
+        "id": "28705a43-fbca-4122-9905-34d277aa8e1b"
+    },
+    {
+        "TimeZoneCode": "IST+2",
+        "TimeZoneDescription": "Israel Standard Time",
+        "TimeZoneOffset": "+02:00",
+        "id": "5af31c05-2f5a-4ee6-ae90-94cb34aff58f"
+    },
+    {
+        "TimeZoneCode": "JST",
+        "TimeZoneDescription": "Japan Standard Time",
+        "TimeZoneOffset": "+09:00",
+        "id": "b9ab5b3a-56ac-40f8-9aab-f75abe633323"
+    },
+    {
+        "TimeZoneCode": "KALT",
+        "TimeZoneDescription": "Kaliningrad Time",
+        "TimeZoneOffset": "+02:00",
+        "id": "7159921e-2bcf-46a6-858c-cb4ec96e90ff"
+    },
+    {
+        "TimeZoneCode": "KGT",
+        "TimeZoneDescription": "Kyrgyzstan Time",
+        "TimeZoneOffset": "+06:00",
+        "id": "91f2c401-b6cb-4c27-b4ee-7b091bf73971"
+    },
+    {
+        "TimeZoneCode": "KOST",
+        "TimeZoneDescription": "Kosrae Time",
+        "TimeZoneOffset": "+11:00",
+        "id": "f2cb4ab5-2e2f-403c-bbc9-c1da932bfee2"
+    },
+    {
+        "TimeZoneCode": "KRAT",
+        "TimeZoneDescription": "Krasnoyarsk Time",
+        "TimeZoneOffset": "+07:00",
+        "id": "250a1753-fc64-4e34-9ef6-4503743917f6"
+    },
+    {
+        "TimeZoneCode": "KST",
+        "TimeZoneDescription": "Korea Standard Time",
+        "TimeZoneOffset": "+09:00",
+        "id": "146beb38-0596-43ef-b12f-2f570cf05944"
+    },
+    {
+        "TimeZoneCode": "LHST",
+        "TimeZoneDescription": "Lord Howe Standard Time",
+        "TimeZoneOffset": "+10:30",
+        "id": "3dda9b09-a55c-4625-a904-f5ecc79ac602"
+    },
+    {
+        "TimeZoneCode": "LHST+11",
+        "TimeZoneDescription": "Lord Howe Summer Time",
+        "TimeZoneOffset": "+11:00",
+        "id": "a9d52ca4-ee75-4fff-830a-67921f6f28e9"
+    },
+    {
+        "TimeZoneCode": "LINT",
+        "TimeZoneDescription": "Line Islands Time",
+        "TimeZoneOffset": "+14:00",
+        "id": "89e52e67-25ce-43f4-8db4-06f7316adf3b"
+    },
+    {
+        "TimeZoneCode": "MAGT",
+        "TimeZoneDescription": "Magadan Time",
+        "TimeZoneOffset": "+12:00",
+        "id": "b7bc8e73-8778-4d34-9a23-4a00ae6565f6"
+    },
+    {
+        "TimeZoneCode": "MART",
+        "TimeZoneDescription": "Marquesas Islands Time",
+        "TimeZoneOffset": "-09:30",
+        "id": "b9e6dc0f-e3ab-492a-b80a-c764edf12e1c"
+    },
+    {
+        "TimeZoneCode": "MAWT",
+        "TimeZoneDescription": "Mawson Station Time",
+        "TimeZoneOffset": "+05:00",
+        "id": "fcde9989-040f-4002-b923-f7b3f0805046"
+    },
+    {
+        "TimeZoneCode": "MDT",
+        "TimeZoneDescription": "Mountain Daylight Time (North America)",
+        "TimeZoneOffset": "-06:00",
+        "id": "c8c6080e-5945-43d6-b942-25bdbd1202dc"
+    },
+    {
+        "TimeZoneCode": "MET",
+        "TimeZoneDescription": "Middle European Time (same zone as CET)",
+        "TimeZoneOffset": "+01:00",
+        "id": "0773613a-d93c-4b8a-895e-47a588f334cc"
+    },
+    {
+        "TimeZoneCode": "MEST",
+        "TimeZoneDescription": "Middle European Summer Time (same zone as CEST)",
+        "TimeZoneOffset": "+02:00",
+        "id": "e4b0cf9a-ac8d-4250-a412-da577632aa33"
+    },
+    {
+        "TimeZoneCode": "MHT",
+        "TimeZoneDescription": "Marshall Islands Time",
+        "TimeZoneOffset": "+12:00",
+        "id": "4a8ee33d-ec80-4508-a42f-6e487243aa1d"
+    },
+    {
+        "TimeZoneCode": "MIST",
+        "TimeZoneDescription": "Macquarie Island Station Time",
+        "TimeZoneOffset": "+11:00",
+        "id": "f5e179b4-1481-472f-a68e-bd6e2ade707e"
+    },
+    {
+        "TimeZoneCode": "MIT",
+        "TimeZoneDescription": "Marquesas Islands Time",
+        "TimeZoneOffset": "-09:30",
+        "id": "b16fd38f-afa5-49ed-a63f-4007f2e695b6"
+    },
+    {
+        "TimeZoneCode": "MMT",
+        "TimeZoneDescription": "Myanmar Standard Time",
+        "TimeZoneOffset": "+06:30",
+        "id": "5a914d2b-750a-48f7-b45c-5e2a8e46a813"
+    },
+    {
+        "TimeZoneCode": "MSK",
+        "TimeZoneDescription": "Moscow Time",
+        "TimeZoneOffset": "+03:00",
+        "id": "78cd2f1e-6cd6-4131-b71d-7b077d86d8a2"
+    },
+    {
+        "TimeZoneCode": "MST",
+        "TimeZoneDescription": "Malaysia Standard Time",
+        "TimeZoneOffset": "+08:00",
+        "id": "5b1b1aa8-3959-425a-8bd9-62ea14017446"
+    },
+    {
+        "TimeZoneCode": "MST-7",
+        "TimeZoneDescription": "Mountain Standard Time (North America)",
+        "TimeZoneOffset": "-07:00",
+        "id": "78f20c72-4f15-4148-8836-9b1a2727b503"
+    },
+    {
+        "TimeZoneCode": "MUT",
+        "TimeZoneDescription": "Mauritius Time",
+        "TimeZoneOffset": "+04:00",
+        "id": "41ea5f41-38e4-46ac-8128-f82bed39b40a"
+    },
+    {
+        "TimeZoneCode": "MVT",
+        "TimeZoneDescription": "Maldives Time",
+        "TimeZoneOffset": "+05:00",
+        "id": "9a59e153-d1ce-4ab9-b5f6-c09dd2611c95"
+    },
+    {
+        "TimeZoneCode": "MYT",
+        "TimeZoneDescription": "Malaysia Time",
+        "TimeZoneOffset": "+08:00",
+        "id": "62e7d790-2491-4a2e-9fc5-da0f10a7137d"
+    },
+    {
+        "TimeZoneCode": "NCT",
+        "TimeZoneDescription": "New Caledonia Time",
+        "TimeZoneOffset": "+11:00",
+        "id": "ade85ca9-d92d-472f-b049-19219a78a4a3"
+    },
+    {
+        "TimeZoneCode": "NDT",
+        "TimeZoneDescription": "Newfoundland Daylight Time",
+        "TimeZoneOffset": "-02:30",
+        "id": "fb6d4e76-6432-405b-bdb9-6b4b610b6578"
+    },
+    {
+        "TimeZoneCode": "NFT",
+        "TimeZoneDescription": "Norfolk Island Time",
+        "TimeZoneOffset": "+11:00",
+        "id": "b229380c-8cf7-4633-902c-9a75a6937748"
+    },
+    {
+        "TimeZoneCode": "NOVT",
+        "TimeZoneDescription": "Novosibirsk Time [9]",
+        "TimeZoneOffset": "+07:00",
+        "id": "ab69e34c-7756-4411-9da9-61f1bfd58186"
+    },
+    {
+        "TimeZoneCode": "NPT",
+        "TimeZoneDescription": "Nepal Time",
+        "TimeZoneOffset": "+05:45",
+        "id": "8243c138-1f63-4fd7-98a1-1eb531f59390"
+    },
+    {
+        "TimeZoneCode": "NST",
+        "TimeZoneDescription": "Newfoundland Standard Time",
+        "TimeZoneOffset": "-03:30",
+        "id": "368175c2-a194-4356-8f1b-f1152b03477f"
+    },
+    {
+        "TimeZoneCode": "NT",
+        "TimeZoneDescription": "Newfoundland Time",
+        "TimeZoneOffset": "-03:30",
+        "id": "23893184-a503-4e13-b3f9-d9d47609230e"
+    },
+    {
+        "TimeZoneCode": "NUT",
+        "TimeZoneDescription": "Niue Time",
+        "TimeZoneOffset": "-11:00",
+        "id": "cb4bbbd0-ece4-4948-b24e-95d51a020d8f"
+    },
+    {
+        "TimeZoneCode": "NZDT",
+        "TimeZoneDescription": "New Zealand Daylight Time",
+        "TimeZoneOffset": "+13:00",
+        "id": "be432b27-baa1-42c2-b07f-9fbe61bcd07e"
+    },
+    {
+        "TimeZoneCode": "NZST",
+        "TimeZoneDescription": "New Zealand Standard Time",
+        "TimeZoneOffset": "+12:00",
+        "id": "ad95add3-5aca-41ef-860f-ac77b6f992d8"
+    },
+    {
+        "TimeZoneCode": "OMST",
+        "TimeZoneDescription": "Omsk Time",
+        "TimeZoneOffset": "+06:00",
+        "id": "bdae650d-f4a0-48f5-89b8-e0228fdf7a41"
+    },
+    {
+        "TimeZoneCode": "ORAT",
+        "TimeZoneDescription": "Oral Time",
+        "TimeZoneOffset": "+05:00",
+        "id": "a5d8179a-9333-4776-96ce-aaec17ac4d2b"
+    },
+    {
+        "TimeZoneCode": "PDT",
+        "TimeZoneDescription": "Pacific Daylight Time (North America)",
+        "TimeZoneOffset": "-07:00",
+        "id": "62069d60-cfb5-4c41-9286-c2debb882654"
+    },
+    {
+        "TimeZoneCode": "PET",
+        "TimeZoneDescription": "Peru Time",
+        "TimeZoneOffset": "-05:00",
+        "id": "a24423e0-fe05-4b31-ba19-80d541c3bfd9"
+    },
+    {
+        "TimeZoneCode": "PETT",
+        "TimeZoneDescription": "Kamchatka Time",
+        "TimeZoneOffset": "+12:00",
+        "id": "c2f12e38-787f-46e9-86d7-cafbb3d39d0a"
+    },
+    {
+        "TimeZoneCode": "PGT",
+        "TimeZoneDescription": "Papua New Guinea Time",
+        "TimeZoneOffset": "+10:00",
+        "id": "fdea8b27-6384-4201-9536-e3fcc1983374"
+    },
+    {
+        "TimeZoneCode": "PHOT",
+        "TimeZoneDescription": "Phoenix Island Time",
+        "TimeZoneOffset": "+13:00",
+        "id": "934d3615-a124-489c-9d1c-1ee3af302034"
+    },
+    {
+        "TimeZoneCode": "PHT",
+        "TimeZoneDescription": "Philippine Time",
+        "TimeZoneOffset": "+08:00",
+        "id": "c79a3e69-f08e-4410-9138-516f40750733"
+    },
+    {
+        "TimeZoneCode": "PHST",
+        "TimeZoneDescription": "Philippine Standard Time",
+        "TimeZoneOffset": "+08:00",
+        "id": "9ccc8b1f-d3b9-4735-93a5-0910953cafaf"
+    },
+    {
+        "TimeZoneCode": "PKT",
+        "TimeZoneDescription": "Pakistan Standard Time",
+        "TimeZoneOffset": "+05:00",
+        "id": "98465d23-3b17-4901-9b2d-f915d4e33429"
+    },
+    {
+        "TimeZoneCode": "PMDT",
+        "TimeZoneDescription": "Saint Pierre and Miquelon Daylight Time",
+        "TimeZoneOffset": "-02:00",
+        "id": "c52e6e68-5fc6-4563-b92e-a0c7d9bacfa3"
+    },
+    {
+        "TimeZoneCode": "PMST",
+        "TimeZoneDescription": "Saint Pierre and Miquelon Standard Time",
+        "TimeZoneOffset": "-03:00",
+        "id": "91af34d1-6a31-456c-9e6b-d8089e0a56c8"
+    },
+    {
+        "TimeZoneCode": "PONT",
+        "TimeZoneDescription": "Pohnpei Standard Time",
+        "TimeZoneOffset": "+11:00",
+        "id": "b947681e-9f21-4f4e-925c-822ef495ed21"
+    },
+    {
+        "TimeZoneCode": "PST",
+        "TimeZoneDescription": "Pacific Standard Time (North America)",
+        "TimeZoneOffset": "-08:00",
+        "id": "2b0c31db-5042-453c-805f-56e12e8d58b7"
+    },
+    {
+        "TimeZoneCode": "PWT",
+        "TimeZoneDescription": "Palau Time[10]",
+        "TimeZoneOffset": "+09:00",
+        "id": "3ae76d56-3e5f-432d-b78f-d57037489e3b"
+    },
+    {
+        "TimeZoneCode": "PYST",
+        "TimeZoneDescription": "Paraguay Summer Time[11]",
+        "TimeZoneOffset": "-03:00",
+        "id": "17941a4f-fef1-4955-8602-567ff3922ec6"
+    },
+    {
+        "TimeZoneCode": "PYT",
+        "TimeZoneDescription": "Paraguay Time[12]",
+        "TimeZoneOffset": "-04:00",
+        "id": "0b861616-6d2b-439a-a3d6-c0ee7dc5cd7a"
+    },
+    {
+        "TimeZoneCode": "RET",
+        "TimeZoneDescription": "RÃ©union Time",
+        "TimeZoneOffset": "+04:00",
+        "id": "ef132efa-488d-41d6-8d5f-be46b2a767e5"
+    },
+    {
+        "TimeZoneCode": "ROTT",
+        "TimeZoneDescription": "Rothera Research Station Time",
+        "TimeZoneOffset": "-03:00",
+        "id": "4d1de168-070f-4eb8-8053-160569acb19c"
+    },
+    {
+        "TimeZoneCode": "SAKT",
+        "TimeZoneDescription": "Sakhalin Island Time",
+        "TimeZoneOffset": "+11:00",
+        "id": "ddbd2bb0-aedc-4cf4-817c-e476ec9d2634"
+    },
+    {
+        "TimeZoneCode": "SAMT",
+        "TimeZoneDescription": "Samara Time",
+        "TimeZoneOffset": "+04:00",
+        "id": "27ee76e0-3ce3-468a-837e-61dbc628ccd6"
+    },
+    {
+        "TimeZoneCode": "SAST",
+        "TimeZoneDescription": "South African Standard Time",
+        "TimeZoneOffset": "+02:00",
+        "id": "4d6ad2dc-e4be-4a6e-96e4-a651b5c8ca63"
+    },
+    {
+        "TimeZoneCode": "SBT",
+        "TimeZoneDescription": "Solomon Islands Time",
+        "TimeZoneOffset": "+11:00",
+        "id": "ec59330d-b7b0-4651-bc6e-0ef52460aaea"
+    },
+    {
+        "TimeZoneCode": "SCT",
+        "TimeZoneDescription": "Seychelles Time",
+        "TimeZoneOffset": "+04:00",
+        "id": "f8bb6cf3-5ab0-4690-93c7-5a6e4ae62e90"
+    },
+    {
+        "TimeZoneCode": "SDT",
+        "TimeZoneDescription": "Samoa Daylight Time",
+        "TimeZoneOffset": "-10:00",
+        "id": "ddda672c-ebe7-4061-b5d7-17b8651d26a1"
+    },
+    {
+        "TimeZoneCode": "SGT",
+        "TimeZoneDescription": "Singapore Time",
+        "TimeZoneOffset": "+08:00",
+        "id": "09ec15a7-b80b-4416-a6d8-716f456dfda2"
+    },
+    {
+        "TimeZoneCode": "SLST",
+        "TimeZoneDescription": "Sri Lanka Standard Time",
+        "TimeZoneOffset": "+05:30",
+        "id": "43598074-a0ba-4b78-82af-5966f4d5cfe2"
+    },
+    {
+        "TimeZoneCode": "SRET",
+        "TimeZoneDescription": "Srednekolymsk Time",
+        "TimeZoneOffset": "+11:00",
+        "id": "4a8fb86d-8667-433c-8542-c255d53b94a4"
+    },
+    {
+        "TimeZoneCode": "SRT",
+        "TimeZoneDescription": "Suriname Time",
+        "TimeZoneOffset": "-03:00",
+        "id": "926dbb23-d6f1-4588-8490-cd0cc1995b0d"
+    },
+    {
+        "TimeZoneCode": "SST-11",
+        "TimeZoneDescription": "Samoa Standard Time",
+        "TimeZoneOffset": "-11:00",
+        "id": "9aaf68b8-b186-4c93-87f5-fde905a2b69d"
+    },
+    {
+        "TimeZoneCode": "SST",
+        "TimeZoneDescription": "Singapore Standard Time",
+        "TimeZoneOffset": "+08:00",
+        "id": "89b2b3ef-d29c-4eda-951b-3ebcb55f6af3"
+    },
+    {
+        "TimeZoneCode": "SYOT",
+        "TimeZoneDescription": "Showa Station Time",
+        "TimeZoneOffset": "+03:00",
+        "id": "0cab26ad-2bea-4efa-b07b-db5b8c630f62"
+    },
+    {
+        "TimeZoneCode": "TAHT",
+        "TimeZoneDescription": "Tahiti Time",
+        "TimeZoneOffset": "-10:00",
+        "id": "3b65dec6-114b-434f-92c8-43bc058f9b8a"
+    },
+    {
+        "TimeZoneCode": "THA",
+        "TimeZoneDescription": "Thailand Standard Time",
+        "TimeZoneOffset": "+07:00",
+        "id": "314687ee-d927-451d-bf59-75945189b441"
+    },
+    {
+        "TimeZoneCode": "TFT",
+        "TimeZoneDescription": "French Southern and Antarctic Time[13]",
+        "TimeZoneOffset": "+05:00",
+        "id": "e85da46a-3fac-439c-b477-1763f116c026"
+    },
+    {
+        "TimeZoneCode": "TJT",
+        "TimeZoneDescription": "Tajikistan Time",
+        "TimeZoneOffset": "+05:00",
+        "id": "b6d6a036-1070-415e-8920-5655bb2db638"
+    },
+    {
+        "TimeZoneCode": "TKT",
+        "TimeZoneDescription": "Tokelau Time",
+        "TimeZoneOffset": "+13:00",
+        "id": "c27d0fd4-c5a5-48ed-965b-07880f29e820"
+    },
+    {
+        "TimeZoneCode": "TLT",
+        "TimeZoneDescription": "Timor Leste Time",
+        "TimeZoneOffset": "+09:00",
+        "id": "0ca154a4-1aeb-40d1-9520-ed0c250a9ecb"
+    },
+    {
+        "TimeZoneCode": "TMT",
+        "TimeZoneDescription": "Turkmenistan Time",
+        "TimeZoneOffset": "+05:00",
+        "id": "eda8d256-5e37-4f88-8530-e090d6ac4aca"
+    },
+    {
+        "TimeZoneCode": "TRT",
+        "TimeZoneDescription": "Turkey Time",
+        "TimeZoneOffset": "+03:00",
+        "id": "2da48ee8-2b40-4524-9b5c-ab635ac2b3bd"
+    },
+    {
+        "TimeZoneCode": "TOT",
+        "TimeZoneDescription": "Tonga Time",
+        "TimeZoneOffset": "+13:00",
+        "id": "5bd34145-a361-4059-bc04-63f77e2937e2"
+    },
+    {
+        "TimeZoneCode": "TVT",
+        "TimeZoneDescription": "Tuvalu Time",
+        "TimeZoneOffset": "+12:00",
+        "id": "adbdb13f-79af-40d5-bf6c-398110d38d2a"
+    },
+    {
+        "TimeZoneCode": "ULAST",
+        "TimeZoneDescription": "Ulaanbaatar Summer Time",
+        "TimeZoneOffset": "+09:00",
+        "id": "3f24a825-d9f0-4b13-90bc-ba3b37103602"
+    },
+    {
+        "TimeZoneCode": "ULAT",
+        "TimeZoneDescription": "Ulaanbaatar Standard Time",
+        "TimeZoneOffset": "+08:00",
+        "id": "c9d9594b-cd55-447f-931d-9cbec3042e73"
+    },
+    {
+        "TimeZoneCode": "UTC",
+        "TimeZoneDescription": "Coordinated Universal Time",
+        "TimeZoneOffset": "+00:00",
+        "id": "1c45203b-fbee-4da8-8d9f-67ac8b73d878"
+    },
+    {
+        "TimeZoneCode": "UYST",
+        "TimeZoneDescription": "Uruguay Summer Time",
+        "TimeZoneOffset": "-02:00",
+        "id": "c19384b8-3769-435b-954b-13db5b6a9e3c"
+    },
+    {
+        "TimeZoneCode": "UYT",
+        "TimeZoneDescription": "Uruguay Standard Time",
+        "TimeZoneOffset": "-03:00",
+        "id": "e4ca57e2-f208-4654-a20c-78e065a9961a"
+    },
+    {
+        "TimeZoneCode": "UZT",
+        "TimeZoneDescription": "Uzbekistan Time",
+        "TimeZoneOffset": "+05:00",
+        "id": "f61a92ca-9082-49c9-b6ee-b877e4a8e010"
+    },
+    {
+        "TimeZoneCode": "VET",
+        "TimeZoneDescription": "Venezuelan Standard Time",
+        "TimeZoneOffset": "-04:00",
+        "id": "21b1e95f-bbb8-4620-8ced-7d2ee8ed8a47"
+    },
+    {
+        "TimeZoneCode": "VLAT",
+        "TimeZoneDescription": "Vladivostok Time",
+        "TimeZoneOffset": "+10:00",
+        "id": "587914ea-3f53-4433-b468-b4385d42add2"
+    },
+    {
+        "TimeZoneCode": "VOLT",
+        "TimeZoneDescription": "Volgograd Time",
+        "TimeZoneOffset": "+04:00",
+        "id": "c74134c4-cb12-4b34-83a6-ce5453a3db1b"
+    },
+    {
+        "TimeZoneCode": "VOST",
+        "TimeZoneDescription": "Vostok Station Time",
+        "TimeZoneOffset": "+06:00",
+        "id": "b7adad89-b05b-4dd5-826b-3e8c9615f185"
+    },
+    {
+        "TimeZoneCode": "VUT",
+        "TimeZoneDescription": "Vanuatu Time",
+        "TimeZoneOffset": "+11:00",
+        "id": "496401a6-1b08-4fd6-a0fc-60d0c730b666"
+    },
+    {
+        "TimeZoneCode": "WAKT",
+        "TimeZoneDescription": "Wake Island Time",
+        "TimeZoneOffset": "+12:00",
+        "id": "b7b950bd-f2b6-43c2-b4a0-c721d6fdf630"
+    },
+    {
+        "TimeZoneCode": "WAST",
+        "TimeZoneDescription": "West Africa Summer Time",
+        "TimeZoneOffset": "+02:00",
+        "id": "048fd530-782c-4af6-ba44-40ed44e3330c"
+    },
+    {
+        "TimeZoneCode": "WAT",
+        "TimeZoneDescription": "West Africa Time",
+        "TimeZoneOffset": "+01:00",
+        "id": "405044b5-a73e-4344-afe3-c353193de000"
+    },
+    {
+        "TimeZoneCode": "WEST",
+        "TimeZoneDescription": "Western European Summer Time",
+        "TimeZoneOffset": "+01:00",
+        "id": "5143968b-f9c0-4f8f-bac1-e43f0a9a6b89"
+    },
+    {
+        "TimeZoneCode": "WET",
+        "TimeZoneDescription": "Western European Time",
+        "TimeZoneOffset": "+00:00",
+        "id": "fd302948-9c0d-4a22-934c-715102aa4134"
+    },
+    {
+        "TimeZoneCode": "WIB",
+        "TimeZoneDescription": "Western Indonesian Time",
+        "TimeZoneOffset": "+07:00",
+        "id": "e5c3b95f-b719-446d-8684-33a463b2245a"
+    },
+    {
+        "TimeZoneCode": "WIT",
+        "TimeZoneDescription": "Eastern Indonesian Time",
+        "TimeZoneOffset": "+09:00",
+        "id": "c7c4afe6-7640-4ab4-b90b-3cd01fa4b180"
+    },
+    {
+        "TimeZoneCode": "WITA",
+        "TimeZoneDescription": "Central Indonesia Time",
+        "TimeZoneOffset": "+08:00",
+        "id": "c2cb0b1d-ab69-4223-b3e4-5c6899f11704"
+    },
+    {
+        "TimeZoneCode": "WGST",
+        "TimeZoneDescription": "West Greenland Summer Time[14]",
+        "TimeZoneOffset": "-02:00",
+        "id": "5783b4ff-3d9f-4dc0-8b81-2c761b22b6e7"
+    },
+    {
+        "TimeZoneCode": "WGT",
+        "TimeZoneDescription": "West Greenland Time[15]",
+        "TimeZoneOffset": "-03:00",
+        "id": "b3c0b0d4-8fa4-4430-a037-3617f3eaa841"
+    },
+    {
+        "TimeZoneCode": "WST",
+        "TimeZoneDescription": "Western Standard Time",
+        "TimeZoneOffset": "+08:00",
+        "id": "a624f2ea-d4aa-4eac-801f-d30bc258d6d4"
+    },
+    {
+        "TimeZoneCode": "YAKT",
+        "TimeZoneDescription": "Yakutsk Time",
+        "TimeZoneOffset": "+09:00",
+        "id": "b7dfb6b0-5c43-4276-9696-80f85ba1f150"
+    },
+    {
+        "TimeZoneCode": "YEKT",
+        "TimeZoneDescription": "Yekaterinburg Time",
+        "TimeZoneOffset": "+05:00",
+        "id": "b1893d42-3291-49e7-9c4d-5583bde8e597"
+    }
+]

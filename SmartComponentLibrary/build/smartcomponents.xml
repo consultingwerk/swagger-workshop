@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<project name="SmartComponent Library Defaults" basedir=".">
+  
+    <!-- PROPATH variations -->
+  
+    <path id="smartcomponents.propath.default">
+        <pathelement path="." />
+        <pathelement path="OERA" />
+        <pathelement path="src" />
+        <pathelement path="Consultingwerk/Studio/ProdictDumpHack/src" />
+        <pathelement path="${progress.DLC}/tty/netlib/OpenEdge.Net.pl" />
+        <pathelement path="${progress.DLC}/tty/ablunit.pl" />
+    </path>
+
+    <path id="smartcomponents.propath.demo">
+        <pathelement path="." />
+        <pathelement path="OERA" />
+        <pathelement path="src" />
+        <pathelement path="src/sports2000demo" />
+        <pathelement path="src/sports2000demo/gui" />
+        <pathelement path="Consultingwerk/Studio/ProdictDumpHack/src" />
+        <pathelement path="${progress.DLC}/tty/netlib/OpenEdge.Net.pl" />
+        <pathelement path="${progress.DLC}/tty/ablunit.pl" />
+    </path>
+
+    <!-- Database connections -->
+    
+    <DBConnectionSet id="smartcomponents.db.demo">
+        <DBConnection dbName="sports2000" dbDir="../DB" singleUser="true">
+            <PCTAlias name="dictdb" />
+        </DBConnection>
+        <DBConnection dbName="SmartDB" dbDir="../DB" singleUser="true" />
+        <DBConnection dbName="icfdb" dbDir="../DB" singleUser="true" />
+    </DBConnectionSet>
+
+    <DBConnectionSet id="smartcomponents.db.smartdb">
+        <DBConnection dbName="SmartDB" dbDir="../DB"
+            singleUser="true">
+            <PCTAlias name="dictdb" />
+        </DBConnection>
+    </DBConnectionSet>
+
+    <DBConnectionSet id="smartcomponents.db.nodemo">
+        <DBConnection dbName="SmartDB" dbDir="../DB"
+            singleUser="true">
+            <PCTAlias name="dictdb" />
+        </DBConnection>
+        <DBConnection dbName="icfdb" dbDir="../DB" singleUser="true" />
+    </DBConnectionSet>
+
+    <DBConnectionSet id="smartcomponents.db.noSmartDB">
+        <DBConnection dbName="sports2000" dbDir="../DB"
+            singleUser="true">
+            <PCTAlias name="dictdb" />
+        </DBConnection>
+        <DBConnection dbName="icfdb" dbDir="../DB" singleUser="true" />
+    </DBConnectionSet>
+
+    <DBConnectionSet id="smartcomponents.db.noicfdb">
+        <DBConnection dbName="sports2000" dbDir="../DB"
+            singleUser="true">
+            <PCTAlias name="dictdb" />
+        </DBConnection>
+        <DBConnection dbName="SmartDB" dbDir="../DB" singleUser="true" />
+    </DBConnectionSet>
+
+    <DBConnectionSet id="smartcomponents.db.empty">
+        <DBConnection dbName="emptydb" dbDir="../DB"
+            singleUser="true">
+            <PCTAlias name="dictdb" />
+        </DBConnection>
+    </DBConnectionSet>
+
+    <!-- Patternsets for files in PCTCompile -->
+    <patternset id="smartcomponents.sources.smartcomponents">
+        <include name="Consultingwerk/SmartComponents/**/*.cls" />
+    </patternset>
+
+    <patternset id="smartcomponents.sources.consultingwerk-no-office">
+        <include name="Ccs/**/*.cls" />
+        <include name="Consultingwerk/**/*.cls" />
+        <exclude name="Consultingwerk/Utilities/Excel/**/*.cls" />
+    </patternset>
+
+    <patternset id="smartcomponents.sources.consultingwerk">
+        <include name="Ccs/**/*.cls" />
+        <include name="Consultingwerk/**/*.cls" />
+    </patternset>
+
+    <patternset id="smartcomponents.sources.consultingwerk-classdoctest">
+        <include name="Ccs/**/*.cls" />
+        <include name="Consultingwerk/**/*.cls" />
+        <exclude name="Consultingwerk/SmartComponentsDemo/**/*.*" />
+        <exclude name="Consultingwerk/iOSAdapter/**/*.*" />
+        <exclude name="Consultingwerk/WindowIntegrationKit/Samples/**/*.*" />
+    </patternset>
+
+    <patternset id="smartcomponents.sources.openedge">
+        <include name="OpenEdge/**/*.cls" />
+    </patternset>
+
+    <patternset id="smartcomponents.sources.allprocedural">
+        <include name="**/*.p" />
+        <include name="**/*.pgen" />
+        <include name="**/*.w" />
+
+        <exclude name="Test/**/*.*" />
+        <exclude name="src/sports2000demo/**/*.*" />
+        <exclude name="Demo/**/*"/>
+    </patternset>
+
+    <patternset id="smartcomponents.sources.allclasses">
+        <include name="**/*.cls" />
+
+        <exclude name="Demo/**/*"/>
+    </patternset>
+
+	<!--
+	 * Depreciated
+	 *-->
+    <patternset id="smartcomponents.sources.allsrc">
+    	<patternset refid="smartcomponents.sources.allprocedural" />
+        <patternset refid="smartcomponents.sources.allclasses" />
+    </patternset>
+
+    <!--
+     * Patternsets for deleting files that should not be part of various build combinations
+     *-->
+    <patternset id="smartcomponents.delete.runtime.nodemo">
+        <include name="Assemblies/Support/*.dll" />
+        <include name="classdoc/*.*" />
+        <include name="Consultingwerk/Assertion/ProparseAssert.cls" />
+        <include name="Consultingwerk/BusinessEntityDesigner/**/*.*" />
+        <include name="Consultingwerk/Design/WinKit/**/*.*" />
+        <include name="Consultingwerk/iOSAdapter/**/*.*" />
+        <include name="Consultingwerk/SmartComponentsDemo/**/*.*" />
+        <include name="Consultingwerk/SmartComponents/Tools/**/*.*" />
+        <include name="Consultingwerk/SmartUnit/**/*.*" />
+        <include name="Consultingwerk/Studio/**/*.*" />
+        <include name="Consultingwerk/Web/**/*.*" />
+        <include name="OERA/service/**/*.*" />
+        <include name="OERA/visual/**/*.*" />
+        <include name="src/adecommx/**/*.*" />
+        <include name="src/demo/**/*.*" />
+        <include name="src/sports2000demo/**/*.*" />
+        <include name="src/sports2000trgs/**/*.*" />
+        <include name="**/*.launch" />
+
+        <exclude name="Consultingwerk/Studio/CompilerHelper.cls" />
+        <exclude name="Consultingwerk/Studio/Listing/**/*.*" />
+        <exclude name="Consultingwerk/Studio/Xref/**/*.*" />
+    </patternset>
+
+    <patternset id="smartcomponents.delete.runtime.demo">
+        <include name="Assemblies/Support/*.dll" />
+        <include name="classdoc/*.*" />
+        <include name="Consultingwerk/Assertion/ProparseAssert.cls" />
+        <include name="Consultingwerk/BusinessEntityDesigner/**/*.*" />
+        <include name="Consultingwerk/iOSAdapter/**/*.*" />
+        <include name="Consultingwerk/SmartComponents/Tools/**/*.*" />
+        <include name="Consultingwerk/SmartComponentsDemo/Deployment/**/*.*" />
+        <include name="Consultingwerk/SmartComponentsDemo/Web/**/*.*" />
+        <include name="Consultingwerk/SmartUnit/**/*.*" />
+        <include name="Consultingwerk/Studio/**/*.*" />
+        <include name="Consultingwerk/Web/**/*.*" />
+        <include name="src/adecommx/**/*.*" />
+        <include name="**/*.launch" />
+
+        <exclude name="Consultingwerk/SmartComponents/Tools/DynamicLookupDesigner/**/*.*" />
+        <exclude name="Consultingwerk/Studio/CompilerHelper.cls" />
+        <exclude name="Consultingwerk/Studio/Listing/**/*.*" />
+        <exclude name="Consultingwerk/Studio/Xref/**/*.*" />
+    </patternset>
+
+    <patternset id="smartcomponents.delete.appserver.nodemo">
+        <include name="**/*.dll" />
+        <include name="Assemblies/**/*.*" />
+        <include name="classdoc/*.*" />
+        <include name="DesignTemplates/**/*.*" />
+        <include name="Consultingwerk/Assertion/ProparseAssert.cls" />
+        <include name="Consultingwerk/BPM/**/*.*" />
+        <include name="Consultingwerk/BusinessEntityDesigner/**/*.*" />
+        <include name="Consultingwerk/Design/**/*.*" />
+        <include name="Consultingwerk/Forms/**/*.*" />
+        <include name="Consultingwerk/iOSAdapter/**/*.*" />
+        <include name="Consultingwerk/SmartComponents/**/*.*" />
+        <include name="Consultingwerk/SmartComponentsDemo/**/*.*" />
+        <include name="Consultingwerk/SmartUnit/**/*.*" />
+        <include name="Consultingwerk/Studio/**/*.*" />
+        <include name="Consultingwerk/Templates/**/*.*" />
+        <include name="Consultingwerk/Utilities/**/*.*" />
+        <include name="Consultingwerk/Web/Studio/**/*.*" />
+        <include name="Consultingwerk/WindowIntegrationKit/**/*.*" />
+        <include name="Consultingwerk/Windows/**/*.*" />
+        <include name="OERA/service/**/*.*" />
+        <include name="OERA/visual/**/*.*" />
+        <include name="src/adecommx/**/*.*" />
+        <include name="src/demo/**/*.*" />
+        <include name="src/sports2000demo/**/*.*" />
+        <include name="src/sports2000trgs/**/*.*" />
+        <include name="src/winkit/**/*.*" />
+        <include name="SmartComponentLibrary.xml" />
+        <include name="**/*.launch" />
+        <include name="**/*.ico" />
+        <include name="**/*.png" />
+        <include name="**/*.bmp" />
+        <include name="**/*.jpg" />
+        <include name="**/*.cmd" />
+        <include name=".*" />
+
+        <exclude name="Consultingwerk/Studio/CompilerHelper.cls" />
+        <exclude name="Consultingwerk/Studio/Listing/**/*.*" />
+        <exclude name="Consultingwerk/Studio/Xref/**/*.*" />
+    </patternset>
+
+    <patternset id="smartcomponents.include.appserver.nodemo">
+        <include name="Ccs/**/*.*" />
+        <include name="Consultingwerk/**/*.*" />
+        <include name="OERA/**/*.*" />
+        <include name="src/**/*.*" />
+
+        <exclude name="Consultingwerk/Assertion/ProparseAssert.cls" />
+        <exclude name="Consultingwerk/BPM/**/*.*" />
+        <exclude name="Consultingwerk/BusinessEntityDesigner/**/*.*" />
+        <exclude name="Consultingwerk/Design/**/*.*" />
+        <exclude name="Consultingwerk/Framework/RepositoryServices/Dynamics/**/*.*" />
+        <exclude name="Consultingwerk/Forms/**/*.*" />
+        <exclude name="Consultingwerk/iOSAdapter/**/*.*" />
+        <exclude name="Consultingwerk/SmartComponents/**/*.*" />
+        <exclude name="Consultingwerk/SmartComponentsDemo/**/*.*" />
+        <exclude name="Consultingwerk/SmartUnit/**/*.*" />
+        <exclude name="Consultingwerk/Studio/**/*.*" />
+        <exclude name="Consultingwerk/Templates/**/*.*" />
+        <exclude name="Consultingwerk/Utilities/**/*.*" />
+        <exclude name="Consultingwerk/Web/Studio/**/*.*" />
+        <exclude name="Consultingwerk/WindowIntegrationKit/**/*.*" />
+        <exclude name="Consultingwerk/Windows/**/*.*" />
+        <exclude name="OERA/service/**/*.*" />
+        <exclude name="OERA/visual/**/*.*" />
+        <exclude name="src/adecommx/**/*.*" />
+        <exclude name="src/protools/abhack/**/*.*" />
+        <exclude name="src/demo/**/*.*" />
+        <exclude name="src/sports2000demo/**/*.*" />
+        <exclude name="src/sports2000trgs/**/*.*" />
+        <exclude name="src/winkit/**/*.*" />
+
+        <exclude name="**/*.dll" />
+        <exclude name="**/*.r" />
+        <exclude name="**/*.launch" />
+        <exclude name="**/*.ico" />
+        <exclude name="**/*.png" />
+        <exclude name="**/*.bmp" />
+        <exclude name="**/*.jpg" />
+        <exclude name="**/*.cmd" />
+        <exclude name="**/*.bedgm" />
+        <exclude name="**/*.ado" />
+        <exclude name="**/*.smfdia" />
+    </patternset>
+
+    <patternset id="smartcomponents.include.appserver.nodemo.studiofiles">
+        <include name="Consultingwerk/Studio/CompilerHelper.cls" />
+        <include name="Consultingwerk/Studio/Listing/**/*.*" />
+        <include name="Consultingwerk/Studio/Xref/**/*.*" />
+
+        <exclude name="**/*.dll" />
+        <exclude name="**/*.r" />
+        <exclude name="**/*.launch" />
+        <exclude name="**/*.ico" />
+        <exclude name="**/*.png" />
+        <exclude name="**/*.bmp" />
+        <exclude name="**/*.jpg" />
+        <exclude name="**/*.cmd" />
+        <exclude name="**/*.bedgm" />
+        <exclude name="**/*.ado" />
+        <exclude name="**/*.smfdia" />
+    </patternset>
+
+	<!--
+	 * Used for UNIX based back end builds
+	 *-->
+
+    <patternset id="smartcomponents.delete.tty.noassemblies">
+        <include name="**/*.dll" />
+        <include name="DesignTemplates/**/*"/>
+        <include name="Consultingwerk/BPM/**/*" />
+        <include name="Consultingwerk/BusinessEntityDesigner/**/*"/>
+        <include name="Consultingwerk/Design/**/*"/>
+        <include name="Consultingwerk/Forms/**/*"/>
+        <include name="Consultingwerk/iOSAdapter/Designer/**/*"/>
+        <include name="Consultingwerk/SmartComponents/**/*"/>
+        <include name="Consultingwerk/SmartComponentsDemo/CustomerExplorer/**/*"/>
+        <include name="Consultingwerk/SmartComponentsDemo/Windows/**/*"/>
+        <include name="Consultingwerk/SmartComponentsDemo/Deployment/**/*"/>
+        <include name="Consultingwerk/SmartComponentsDemo/OrderEntry/Frontend/**/*"/>
+        <include name="Consultingwerk/SmartUnit/**/*"/>
+        <include name="Consultingwerk/Studio/**/*"/>
+        <include name="Consultingwerk/Utilities/**/*"/>
+        <include name="Consultingwerk/Web/Studio/**/*"/>
+        <include name="Consultingwerk/WindowIntegrationKit/**/*"/>
+        <include name="Consultingwerk/Windows/**/*"/>
+        <include name="OERA/visual/**/*"/>
+        <include name="OpenEdge/ABLUnit/**/*"/>
+        <include name="Test/**/*"/>
+        <include name="src/demo/**/*"/>
+        <include name="src/protools/**/*"/>
+        <include name="src/sports2000demo/**/*"/>
+        <include name="src/winkit/**/*"/>
+        <include name="src/adecommx/**/*"/>
+        <include name="**/*.launch" />
+        <include name="**/*.ico" />
+        <include name="**/*.png" />
+        <include name="**/*.bmp" />
+        <include name="**/*.jpg" />
+        <include name="**/*.cmd" />
+    	<include name="Demo/**/*" />
+
+        <exclude name="build/*"/>
+        <exclude name="Consultingwerk/Studio/*"/>
+        <exclude name="Consultingwerk/Studio/Listing/**/*"/>
+        <exclude name="Consultingwerk/Studio/PCT/**/*"/>
+        <exclude name="Consultingwerk/Studio/Xref/**/*"/>
+    </patternset>
+
+    <!--
+     * Patternsets to compile TTY without deleting files
+
+     *-->
+    <patternset id="smartcomponents.compile.tty.noassemblies.procedural" includes="**/*.p,**/*.w,**/*.pgen" excludes="**/*.xml,**/*.json,**/*.properties,**/*.props">
+    	<invert>
+            <patternset refid="smartcomponents.delete.tty.noassemblies"/>
+        </invert>
+    </patternset>
+
+    <patternset id="smartcomponents.compile.tty.noassemblies.classes" includes="**/*.cls" excludes="**/*.xml,**/*.json,**/*.properties,**/*.props">
+    	<invert>
+            <patternset refid="smartcomponents.delete.tty.noassemblies"/>
+        </invert>
+    </patternset>
+
+    <patternset id="smartcomponents.compile.tty.noassemblies.studio.procedural">
+        <include name="Consultingwerk/Studio/*.p"/>
+        <include name="Consultingwerk/Studio/Listing/**/*.p"/>
+        <include name="Consultingwerk/Studio/PCT/**/*.p"/>
+        <include name="Consultingwerk/Studio/Xref/**/*.p"/>
+        <include name="Consultingwerk/Studio/*.w"/>
+        <include name="Consultingwerk/Studio/Listing/**/*.w"/>
+        <include name="Consultingwerk/Studio/PCT/**/*.w"/>
+        <include name="Consultingwerk/Studio/Xref/**/*.w"/>
+        <include name="Consultingwerk/Studio/*.pgen"/>
+        <include name="Consultingwerk/Studio/Listing/**/*.pgen"/>
+        <include name="Consultingwerk/Studio/PCT/**/*.pgen"/>
+        <include name="Consultingwerk/Studio/Xref/**/*.pgen"/>
+    </patternset>
+
+    <patternset id="smartcomponents.compile.tty.noassemblies.studio.classes">
+        <include name="Consultingwerk/Studio/*.cls"/>
+        <include name="Consultingwerk/Studio/Listing/**/*.cls"/>
+        <include name="Consultingwerk/Studio/PCT/**/*.cls"/>
+        <include name="Consultingwerk/Studio/Xref/**/*.cls"/>
+        <include name="Consultingwerk/Studio/ProparseApi/*.cls"/>
+        <include name="Consultingwerk/Studio/ProparseApi/Implementation/ProparseWeb/*.cls"/>
+        <include name="Consultingwerk/Studio/Proparse/schemadump1.p"/>
+        <include name="Consultingwerk/Studio/Proparse/schemadump2.p"/>
+    </patternset>
+</project>

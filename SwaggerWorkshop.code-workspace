@@ -1,0 +1,57 @@
+{
+	"folders": [
+        {
+            "name": "SmartComponentLibrary",
+            "path": "SmartComponentLibrary"
+        },
+        {
+            "name": "labs",
+            "path": "labs"
+        }
+    ],
+	"settings": {
+		"files.exclude": {
+			"**/*.r": true,
+			"**/.builder": true,
+			"**/.externalToolBuilders": true,
+			"**/.sonarlint": true,
+			"**/.vscode": false
+		},
+		"files.encoding": "iso88591",
+		"files.trimTrailingWhitespace": true,
+		"files.associations": {
+			"*.p": "abl",
+			"*.cls": "abl",
+			"*.w": "abl",
+			"*.i": "abl"
+		},
+        "cSpell.words": [],
+        "cSpell.ignoreWords": [],
+        "editor.formatOnPaste": true,
+        "diffEditor.codeLens": true,
+        "abl.defaultProject": "SmartComponentLibrary",
+        "templates.folder": "",
+        "ant.home": "C:\\Progress\\OpenEdge128_64\\ant",
+        "ant.buildFilenames": "annotations.xml,build.xml",
+        "ant.executable": "ant -lib c:\\Progress\\OpenEdge128_64\\PCT\\pct.jar",
+        "terminal.integrated.enablePersistentSessions": true,
+        "explorer.fileNesting.enabled": true,
+        "explorer.fileNesting.patterns": {
+            "*Query.cls": "${capture}*Predicate.cls",
+            "*DatasetModel.cls": "${basename}*.cls",
+            "*TableModel.cls": "${basename}*.cls",
+            "*BusinessTask.cls": "${basename}.*",
+            "*BusinessEntity.cls": "${basename}.*"
+        },
+        "ant.envVarsFile": "build.env"
+    },
+    "extensions": {
+        "recommendations": [
+            "streetsidesoftware.code-spell-checker",
+            "riversidesoftware.openedge-abl-lsp",
+            "koalamer.workspace-in-status-bar",
+            "rioj7.vscode-file-templates",
+            "nickheap.vscode-ant"
+        ]
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "basedOn": "",
+    "inheritStaticProperties": false,
+    "staticProperties": {
+        "Consultingwerk.SmartFramework.System.TranslationProvider:UseEmptyScopeAsFallback": true,
+        "Consultingwerk.Framework.Server.RestServerSessionActivator:SetDbClient": false
+    },
+    "applicationSettings": ".applicationsettings",
+    "inheritLoadServices": false,
+    "loadServices": [
+        "Consultingwerk/Framework/Server/services.xml",
+        "Consultingwerk/SmartFramework/Repository/services.xml",
+        "Consultingwerk/SmartFramework/services_server.xml"],
+    "inheritManagers": false,
+    "managers": {
+        "Ccs.Common.IServiceManager": "Consultingwerk.Framework.CcsServiceManager"},
+    "inheritCustomLogEntries": false,
+    "customLogEntries": [],
+    "inheritAliases": false,
+    "aliases": null,
+    "sessionExport":  null
+}
