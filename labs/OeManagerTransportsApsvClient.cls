@@ -87,7 +87,7 @@ class Demo.Swagger.oemanager.Client.OeManagerTransportsApsvClient:
         define variable oRequest as IHttpRequest no-undo.
         define variable oResponse as IHttpResponse no-undo.
 
-        oRequest = RequestBuilder:Get(substitute("&1/applications/&2/webapps/&2/transports/apsv/properties":u,
+        oRequest = RequestBuilder:Get(substitute("&1/applications/&2/webapps/&3/transports/apsv/properties":u,
                                                  cBaseUrl, pcAppName, pcWebAppName))
                         :UsingCredentials(poCredentials)
                         :Request.
@@ -116,7 +116,7 @@ class Demo.Swagger.oemanager.Client.OeManagerTransportsApsvClient:
         define variable oRequest as IHttpRequest no-undo.
         define variable oResponse as IHttpResponse no-undo.
 
-        oRequest = RequestBuilder:Post(substitute("&1/applications/&2/webapps/&2/transports/apsv/properties":u,
+        oRequest = RequestBuilder:Post(substitute("&1/applications/&2/webapps/&3/transports/apsv/properties":u,
                                                   cBaseUrl, pcAppName, pcWebAppName))
                         :WithData(poApsvTransportProperties:ToJsonObject())
                         :ContentType("application/vnd.progress+json")
