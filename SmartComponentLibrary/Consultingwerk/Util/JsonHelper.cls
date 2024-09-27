@@ -519,123 +519,6 @@ class Consultingwerk.Util.JsonHelper:
     end method.
 
     /**
-     * Purpose: Adds the properties of the given widget to the
-     *          JSON Array as name/value pairs
-     * Notes:
-     * @param phWidget The handle of the widget to add properties from
-     * @param poJsonArray The JSON object to add properties to
-     * @param pcExceptPropertyNames The property names to exclude from the result
-     * @param pcKey The name of the json property to hold the ABL property name
-     * @param pcValue The name of the json property to hold the ABL property value
-     */
-    method public static void AddWidgetPropertiesToJsonArray (phWidget as handle,
-                                                              poJsonArray as JsonArray,
-                                                              pcExceptPropertyNames as character,
-                                                              pcKey as character,
-                                                              pcValue as character):
-
-        define variable i           as integer    no-undo .
-        define variable cAttributes as character  no-undo .
-        define variable cAttribute  as character  no-undo .
-        define variable hCall       as handle     no-undo .
-        define variable oEntry      as JsonObject no-undo .
-
-        if not valid-handle (phWidget) then
-            return .
-
-        assign cAttributes = ListHelper:SortList(list-query-attrs (phWidget)) .
-
-        loop:
-        do i = 1 to num-entries (cAttributes):
-            assign cAttribute = entry (i, cAttributes) .
-
-            /* Mike Fechner, Consultingwerk Ltd. 13.07.2015
-               Need to verify as some methods called as attributes (like SERIALIZE-ROW on the buffer object handle)
-               may kill the AVM (call #00318812)  */
-            if not WidgetAttributes:IsValid (cAttribute) then
-                next loop .
-
-            oEntry = new JsonObject () .
-            oEntry:Add (pcKey, cAttribute) .
-            poJsonArray:Add (oEntry) .
-
-            do on error undo, throw:
-                create call hCall.
-
-                assign hCall:in-handle = phWidget
-                       hCall:call-type = get-attr-call-type
-                       hCall:call-name = cAttribute .
-
-                {&_proparse_ prolint-nowarn(avoidnoerror)}
-                hCall:invoke () no-error .
-
-                if error-status:num-messages > 0 then
-                    next loop .
-
-                oEntry:Add (pcValue, hCall:return-value) .
-
-                catch err as Progress.Lang.Error:
-                    LogManager:WriteIgnoredError (err) .
-
-                    next loop .
-                end catch.
-
-                finally:
-                    Consultingwerk.Util.GarbageCollectorHelper:DeleteObject (hCall) .
-                end finally.
-            end.
-        end.
-
-    end method .
-
-    /**
-     * Purpose: Assigns fields of the buffer from the values of the JSON object
-     * Notes:
-     * @param phBuffer The handle of the buffer to assign to
-     * @param poJson The JsonObject to assign from
-     * @param pcIgnoreProperties Comma delimited list of JSON properties to ignore
-     * @param pcIncludeFields Comma delimited list of fields to include, if set only those fields will be handled, * (or empty) for all fields. Fields may be qualified with a buffer name or not. When the buffer does not match the current buffer name, the fields are ignored
-     */
-    method public static void AssignBufferFromJson (phBuffer as handle,
-                                                    poJson as JsonObject,
-                                                    pcIgnoreProperties as character,
-                                                    pcIncludeFields as character):
-
-        define variable cNames     as character no-undo extent .
-        define variable i          as integer   no-undo .
-        define variable hField     as handle    no-undo .
-        define variable cFieldName as character no-undo .
-
-        HandleAssert:WidgetType (phBuffer, WidgetTypeEnum:Buffer) .
-        BufferAssert:IsAvailable (phBuffer) .
-        ObjectAssert:IsValid(poJson, "poJson":U) .
-
-        assign cNames = poJson:GetNames() .
-
-        fieldLoop:
-        do i = 1 to extent (cNames):
-
-            if pcIgnoreProperties > "":U and lookup (cNames[i], pcIgnoreProperties) > 0 then
-                next fieldLoop .
-
-            assign cFieldName = BufferHelper:FieldWithSerializeName (phBuffer, cNames[i]) .
-
-            if cFieldName = ? then
-                next fieldLoop .
-
-            assign hField = phBuffer:buffer-field (cFieldName) .
-
-            if pcIncludeFields > "":U then
-                if not ListHelper:CanDo (pcIncludeFields, hField:name) and
-                   not ListHelper:CanDo (pcIncludeFields, substitute ("&1.&2":U, phBuffer:name, hField:name)) then
-                    next fieldLoop .
-
-            JsonHelper:AssignBufferFieldFromJson (hField, poJson) .
-        end.
-
-    end method.
-
-    /**
      * Purpose: Assigns properties in the given JsonObject from a Character value
      * Notes:   The character value must be in the form of the html style attribute, e.g.:
      *          background-color:LightCyan; width:200; xyz: "otto"
@@ -2972,10 +2855,10 @@ class Consultingwerk.Util.JsonHelper:
         define variable lcJsonString as longchar no-undo .
 
         fix-codepage (lcJsonString) = Codepages:UTF-8 .
-        
-        if not valid-object(poJsonObject) then 
+
+        if not valid-object(poJsonObject) then
             return ?.
-        
+
         poJsonObject:Write (input-output lcJsonString, true) .
 
         return string (substring (lcJsonString, 1, 20000, "CHARACTER":U)) .
