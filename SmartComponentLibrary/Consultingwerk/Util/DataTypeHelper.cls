@@ -320,37 +320,6 @@ class Consultingwerk.Util.DataTypeHelper:
     end method.
 
     /**
-     * Purpose: Returns an ABL Character value from a double by MEMPTR
-     *          value
-     * Notes:   Use only with CPINTERNAL UTF-8 or UTF-16
-     * @param pmPtr The MEMPTR retrieved by a Windows API W method
-     * @param piLength The number of character to retrieve
-     * @return The ABL Character value
-     */
-    method public static character GetStringFromWideMptr (pmPtr as memptr,
-                                                          piLength as integer):
-
-        define variable i       as integer   no-undo .
-        define variable cValue  as character no-undo .
-        define variable iValue  as int64     no-undo .
-        define variable iValue2 as int64     no-undo .
-
-        do i = 1 to piLength * 2 by 2:
-            assign iValue  = get-byte (pmPtr, i)
-                   iValue2 = get-byte (pmPtr, i + 1).
-
-            if iValue2 > 0 then
-                assign iValue = iValue + iValue2 * 256.
-
-            assign iValue = CodepageHelper:UnicodeCodepointToUtf8(iValue)
-                   cValue = cValue + chr (iValue, "utf-8":U, "utf-8":U) .
-        end.
-
-        return cValue .
-
-    end method.
-
-    /**
      * Purpose: Returns a human readable version of an interval
      * Notes:   e.g. 2 days 4 hours 10 minutes 6.134 seconds
      * @param pdtDateTime1 The first datetime-tz value

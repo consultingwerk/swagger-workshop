@@ -41,7 +41,6 @@ using Progress.Lang.*                  from propath.
 class Consultingwerk.Util.FileHelper:
 
     {Consultingwerk/Util/TempTables/ttFileNames.i &ACCESS=static}
-    {Consultingwerk/Util/TempTables/ttMimeTypes.i &ACCESS=static}
 
     define stream imp .
 
