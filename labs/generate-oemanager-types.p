@@ -47,7 +47,7 @@ define variable cPath                as character                           no-u
 
 session:error-stack-trace = true.
 
-oSpec = cast (JsonHelper:ParseFile ("specs\OeManager\openapi-128.json"),
+oSpec = cast (JsonHelper:ParseFile ("specs\OeManager\openapi-with-with-respose.json"),
                  JsonObject).
 
 oLogging = new FileLoggingStream ("generator.log") .
@@ -61,7 +61,11 @@ oParameter = new SwaggerSchemaTypeGeneratorParameter() .
 assign oParameter:BasePackage    = "Samples.OeManager.Client"
        oParameter:NestedPackages = true.
 
-assign cPath = "paths/~~/applications~~/~{AppName}~~/webapps~~/~{WebAppName}~~/transports~~/apsv~~/properties/put/requestBody/content/application~~/vnd.progress+json/schema".
+//assign cPath = "paths/~~/applications~~/~{AppName}~~/webapps~~/~{WebAppName}~~/transports~~/apsv~~/properties/put/requestBody/content/application~~/vnd.progress+json/schema".
+
+//assign cPath = "paths/~~/applications~~/~{AppName}~~/webapps~~/~{WebAppName}~~/transports~~/apsv~~/properties/get/responses/200/content/application~~/json/schema".
+assign cPath = "paths/~~/applications~~/~{AppName}~~/webapps~~/~{WebAppName}~~/transports~~/apsv~~/properties/put/responses/200/content/application~~/json/schema".
+
 
 message "Processing:" cPath .
 
