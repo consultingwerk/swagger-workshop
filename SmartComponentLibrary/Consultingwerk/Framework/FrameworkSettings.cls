@@ -259,9 +259,6 @@ CLASS Consultingwerk.Framework.FrameworkSettings   :
 
         DEFINE VARIABLE oSettingsService AS Progress.Lang.Object NO-UNDO .
 
-        FrameworkSettings:ServiceContainer:AddService (GET-CLASS (IStatusManager),
-                                                       FrameworkSettings:StatusManager) .
-
         /* Initialize the Environment class */
         {&_proparse_ prolint-nowarn(exprnofx)}
         Consultingwerk.Environment:TimeStarted .
