@@ -47,7 +47,7 @@ define variable cPath                as character                           no-u
 
 session:error-stack-trace = true.
 
-oSpec = cast (JsonHelper:ParseFile ("specs\OeManager\openapi-with-with-respose.json"),
+oSpec = cast (JsonHelper:ParseFile ("C:\Work\SwaggerWorkshop\swaggerpas2\webapps\ROOT\static\openapi.json"),
                  JsonObject).
 
 oLogging = new FileLoggingStream ("generator.log") .
@@ -61,13 +61,20 @@ oParameter = new SwaggerSchemaTypeGeneratorParameter() .
 assign oParameter:BasePackage    = "Samples.OeManager.Client"
        oParameter:NestedPackages = true.
 
-//assign cPath = "paths/~~/applications~~/~{AppName}~~/webapps~~/~{WebAppName}~~/transports~~/apsv~~/properties/put/requestBody/content/application~~/vnd.progress+json/schema".
+assign cPath = "paths/~~/applications~~/~{AppName}~~/webapps~~/~{WebAppName}~~/transports~~/apsv~~/properties/put/requestBody/content/application~~/vnd.progress+json/schema".
 
 //assign cPath = "paths/~~/applications~~/~{AppName}~~/webapps~~/~{WebAppName}~~/transports~~/apsv~~/properties/get/responses/200/content/application~~/json/schema".
-assign cPath = "paths/~~/applications~~/~{AppName}~~/webapps~~/~{WebAppName}~~/transports~~/apsv~~/properties/put/responses/200/content/application~~/json/schema".
+//assign cPath = "paths/~~/applications~~/~{AppName}~~/webapps~~/~{WebAppName}~~/transports~~/apsv~~/properties/put/responses/200/content/application~~/vnd.progress+json/schema".
 
+
+define variable oClassNameProvider as ISwaggerToAblClassNameProvider no-undo.
+
+oClassNameProvider = {Consultingwerk/get-service.i ISwaggerToAblClassNameProvider
+                        "new SwaggerToAblClassNameProvider ()"}.
 
 message "Processing:" cPath .
+
+message oSpec .
 
 oGenerator:Generate (? /* class name*/,
                     ? /* package name*/,
