@@ -42,7 +42,7 @@ CLASS Samples.OeManager.Client.getProperties_1Response
     GET.
     SET.
 
-    DEFINE PUBLIC PROPERTY versionNo AS CHARACTER NO-UNDO
+    DEFINE PUBLIC PROPERTY versionNo AS INTEGER NO-UNDO
     GET.
     SET.
 
@@ -73,7 +73,7 @@ CLASS Samples.OeManager.Client.getProperties_1Response
         pResult AS ApsvTransportProperties,
         pErrmsg AS CHARACTER,
         pVersionStr AS CHARACTER,
-        pVersionNo AS CHARACTER):
+        pVersionNo AS INTEGER):
 
         THIS-OBJECT ().
 
